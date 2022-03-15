@@ -1,0 +1,27 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        src:  url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 700;
+        src:  url('/fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+    }
+}
+
+* {
+    @apply antialiased;
+}
+
+html {
+    @apply bg-black font-space;
+}
