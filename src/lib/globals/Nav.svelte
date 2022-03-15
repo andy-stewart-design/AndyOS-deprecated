@@ -1,5 +1,7 @@
 <script>
 	import AndyLogo from '$lib/icons/AndyLogo.svelte';
+	import ThemeToggle from './ThemeToggle.svelte';
+
 	// main nav links
 	const links = [
 		{
@@ -83,6 +85,16 @@
 		</ul>
 	</div>
 </nav>
+
+<div
+	class="fixed bottom-12 right-8 backdrop-blur-sm border border-[#0d0d0e] border-opacity-10 dark:border-zinc-100 dark:border-opacity-10 rounded-full shadow-xl z-40"
+>
+	<div
+		class="bg-zinc-200 bg-opacity-70 dark:bg-[#1b1b1d] dark:bg-opacity-70 w-14 h-14 rounded-full"
+	>
+		<ThemeToggle />
+	</div>
+</div>
 
 <!-- hover styles for the main nav -->
 <style>
