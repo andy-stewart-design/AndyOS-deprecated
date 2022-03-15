@@ -24,7 +24,7 @@
 
 <!-- sidebar -->
 <div
-	class="fixed top-0 left-0  h-screen border-r border-[#0d0d0e] border-opacity-10 dark:border-zinc-100 dark:border-opacity-10 z-40"
+	class="fixed top-0 left-0  h-screen border-r border-[#0d0d0e] border-opacity-20 dark:border-zinc-100 dark:border-opacity-20 z-40"
 >
 	<div
 		class="relative bg-zinc-200 dark:bg-[#0d0d0e] bg-opacity-20 dark:bg-opacity-20 w-18 h-screen"
@@ -32,7 +32,7 @@
 		<div
 			class="absolute top-0 left-0 flex justify-center items-center w-[100vh] h-18 origin-top-left rotate-90 translate-x-18 pointer-events-none"
 		>
-			<p>If you're reading this it's just lorem ipsum</p>
+			<p>If you're reading this, it's just lorem ipsum dolor sit amet</p>
 		</div>
 		<div
 			class="relative flex justify-center items-center w-18 h-18 border-b border-[#0d0d0e] border-opacity-20 dark:border-zinc-100 dark:border-opacity-20"
