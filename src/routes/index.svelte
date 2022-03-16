@@ -18,14 +18,14 @@
 					</div>
 					<h1 class="text-5xl font-bold">
 						Andy Stewart <span
-							class="text-[#0d0d0e] text-opacity-60 dark:text-zinc-100 dark:text-opacity-60"
+							class="text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
 							>designs future-focused visual systems—often for screens, sometimes not.</span
 						>
 					</h1>
-					<p class="text-lg text-[#0d0d0e] text-opacity-60 dark:text-zinc-100 dark:text-opacity-60">
+					<p class="text-lg text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60">
 						Andy Stewart is a graphic designer working at the intersection of brand and technology.
 						He is currently the digital creative director at <a
-							class="text-[#0d0d0e] text-opacity-100 dark:text-zinc-100 dark:text-opacity-100"
+							class="text-black text-opacity-100 dark:text-gray-100 dark:text-opacity-100"
 							href="/">Turnstyle</a
 						>.
 					</p>

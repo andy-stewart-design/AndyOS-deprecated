@@ -7,7 +7,7 @@
 	<script src="/js/set-theme.js"></script>
 </svelte:head>
 
-<main class="relative bg-zinc-200 text-[#0d0d0e] dark:bg-[#0d0d0e] dark:text-zinc-100">
+<main class="relative bg-gray-200 text-black dark:bg-black dark:text-gray-100">
 	<Nav />
 	<slot />
 </main>

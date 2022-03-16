@@ -5,8 +5,8 @@
 <PgTransSimple>
 	<section class="grid gap-y-6 auto-rows-min max-w-3xl mx-auto pt-24 pb-40 min-h-screen">
 		<h1 class="text-4xl font-bold">
-			Refined strategy meets spotless design meets powerful engineering, the perfect combo for a
-			successful digital product. Welcome to MAD.
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis repudiandae architecto
+			molestiae et unde maiores.
 		</h1>
 		<p>
 			Design works on the mind through the eyes. In the right context, with the right tone of voice,
