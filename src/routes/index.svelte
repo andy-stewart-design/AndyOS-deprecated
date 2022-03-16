@@ -2,7 +2,7 @@
 	import PgTransSimple from '$lib/globals/PgTransSimple.svelte';
 	import AppWindow from '$lib/components/AppWindow.svelte';
 	import AndyLogo from '$lib/icons/AndyLogo.svelte';
-	import { draggable } from '@neodrag/svelte';
+	// import { draggable } from '@neodrag/svelte';
 </script>
 
 <PgTransSimple>
@@ -10,7 +10,7 @@
 		<div
 			class="absolute top-0 left-0 w-full h-full bg-gradient-to-tl from-rose-700 to-orange-400"
 		/>
-		<div class="relative w-full md:max-w-4xl pb-4" use:draggable>
+		<div class="relative w-full md:max-w-4xl pb-4">
 			<AppWindow title="welcome.md">
 				<div class="grid gap-y-8">
 					<div class="w-16">
