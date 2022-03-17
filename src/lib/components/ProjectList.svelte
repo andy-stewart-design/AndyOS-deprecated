@@ -15,7 +15,7 @@
 	>
 		2018-22
 	</h2>
-	<h3 class="text-sm md:text-base">Indexxx</h3>
+	<h3 class="text-sm md:text-base">Index</h3>
 	<h3 class="text-sm md:text-base">Client</h3>
 	<h3 class="md:hidden text-sm md:text-base">Year</h3>
 	<h3 class="text-sm md:text-base">Services</h3>
