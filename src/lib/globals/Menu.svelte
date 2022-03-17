@@ -51,18 +51,22 @@
 				{/if}
 			{/each}
 			<li class="h-8 w-16 pointer-events-auto">
-				<ThemeToggle />
+				<div class="w-full h-full transition-opacity duration-300">
+					<ThemeToggle />
+				</div>
 			</li>
 		</ul>
 	</div>
 </nav>
 
 <style>
-	ul.flex:hover > *:not(.text-opacity-40) > a {
+	ul.flex:hover > *:not(.text-opacity-40) > a,
+	ul.flex:hover > *:not(.text-opacity-40) > div {
 		opacity: 0.4;
 	}
 
-	ul.flex:hover > *:not(.text-opacity-40):hover > a {
+	ul.flex:hover > *:not(.text-opacity-40):hover > a,
+	ul.flex:hover > *:not(.text-opacity-40):hover > div {
 		opacity: 1;
 	}
 </style>
