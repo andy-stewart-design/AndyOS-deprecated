@@ -30,14 +30,31 @@ const config = {
 			animation: {
 				'marquee': 'marquee linear infinite',
 			},
+			aspectRatio: {
+				'film': '3 / 2',
+				'common': '5 / 4',
+			},
+			gridTemplateColumns: {
+				'project-s': 'minmax(auto, 2fr) minmax(auto, 5fr)',
+				'project-l': 'auto repeat(2, minmax(0, 1fr)) auto',
+			},
 			keyframes: {
 				marquee: {
 					'100%': { 'transform': 'translateX(-100%)' },
 				},
 			},
+			screens: {
+				'hover-hover': { 'raw': '(hover: hover)' },
+			},
 			spacing: {
 				'18': '4.5rem',
-			}
+			},
+			transitionTimingFunction: {
+				'in-out-cubic': 'cubic-bezier(0.65, 0, 0.35, 1)',
+				'in-cubic': 'cubic-bezier(0.32, 0, 0.67, 0)',
+				'out-cubic': 'cubic-bezier(0.33, 1, 0.68, 1)',
+				'out-quint': 'cubic-bezier(0.22, 1, 0.36, 1)',
+			},
 		}
 	},
 
