@@ -23,5 +23,5 @@
 }
 
 html {
-    @apply bg-black font-space;
+    @apply bg-black font-sans;
 }
