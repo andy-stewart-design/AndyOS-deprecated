@@ -1,19 +1,12 @@
 <script>
-	import { onMount } from 'svelte';
-	import { fly } from 'svelte/transition';
-
-	let loaded = false;
-
-	onMount(() => {
-		setTimeout(() => {
-			loaded = true;
-		}, 200);
-	});
+	import { fade } from 'svelte/transition';
+	import { quadOut } from 'svelte/easing';
+	import { duration } from '$lib/stores/mainStore';
 </script>
 
 <div
-	in:fly={{ y: 40, duration: 400, delay: 400 }}
-	out:fly={{ duration: 400 }}
+	in:fade={{ duration: duration, delay: duration * 1.5, easing: quadOut }}
+	out:fade={{ duration: duration, easing: quadOut }}
 	on:outroend={() => {
 		window.scroll(0, 0);
 	}}

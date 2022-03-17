@@ -1,4 +1,7 @@
 <script>
+	import { fly } from 'svelte/transition';
+	import { quartOut } from 'svelte/easing';
+	import { duration } from '$lib/stores/mainStore';
 	import PgTransSimple from '$lib/globals/PgTransSimple.svelte';
 	import AppWindow from '$lib/components/AppWindow.svelte';
 	import AndyLogo from '$lib/icons/AndyLogo.svelte';
@@ -10,7 +13,10 @@
 		<div
 			class="absolute top-0 left-0 w-full h-full bg-gradient-to-tl from-rose-700 to-orange-400"
 		/>
-		<div class="relative w-full md:max-w-4xl pb-4">
+		<div
+			class="relative w-full md:max-w-4xl pb-4"
+			in:fly={{ y: 160, duration: duration * 2, delay: duration * 1.5, easing: quartOut }}
+		>
 			<AppWindow title="welcome.md">
 				<div class="grid gap-y-8">
 					<div class="w-16">
