@@ -25,3 +25,11 @@
 html {
     @apply bg-black font-sans;
 }
+
+.lazy-media {
+    @apply scale-125 opacity-0;
+}
+
+.lazy-media-inview {
+    @apply opacity-100 scale-100;
+}

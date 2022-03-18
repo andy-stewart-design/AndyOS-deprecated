@@ -22,7 +22,7 @@
 			class="relative flex justify-center items-center w-18 h-18 border-r md:border-r-0 md:border-b border-black border-opacity-20 dark:border-gray-100 dark:border-opacity-20"
 		>
 			<a
-				class="w-full h-full p-2.5 transition-all duration-300 hover:bg-gray-200 hover:bg-opacity-30 dark:hover:-black dark:hover:bg-opacity-30"
+				class="w-full h-full p-2.5 bg-black bg-opacity-0 hover:bg-opacity-20 dark:bg-gray-200 dark:bg-opacity-0 dark:hover:bg-opacity-20 transition-colors duration-300"
 				href="/"
 				sveltekit:prefetch
 				sveltekit:noscroll
