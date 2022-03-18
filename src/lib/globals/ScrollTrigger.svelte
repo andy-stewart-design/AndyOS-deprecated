@@ -12,7 +12,6 @@
 			if (entry.target.nodeName === 'IMG') {
 				if (entry.isIntersecting) {
 					let image = entry.target;
-					console.log(image);
 					image.src = image.dataset.src;
 					setTimeout(() => {
 						image.classList.add('lazy-media-inview');
@@ -22,16 +21,13 @@
 			}
 			if (entry.target.nodeName === 'VIDEO') {
 				let video = entry.target;
-				// video.src = video.dataset.src;
 				if (entry.isIntersecting && video.paused) {
 					video.play();
 					setTimeout(() => {
 						video.classList.add('lazy-media-inview');
 					}, 400);
-					// console.log('video is playing');
 				} else if (!entry.isIntersecting && !video.paused) {
 					video.pause();
-					// console.log('video is paused');
 				}
 			}
 		});
