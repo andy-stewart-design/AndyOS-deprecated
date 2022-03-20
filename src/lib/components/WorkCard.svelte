@@ -19,7 +19,14 @@
 </script>
 
 <div>
-	<a class="group mb-12" {href} on:mouseenter={enter} on:mouseleave={leave} sveltekit:noscroll>
+	<a
+		class="group mb-12"
+		{href}
+		on:mouseenter={enter}
+		on:mouseleave={leave}
+		sveltekit:noscroll
+		sveltekit:prefetch
+	>
 		<div class="relative w-full rounded-2xl overflow-hidden mb-4 bg-black transition-fix">
 			{#if isLoaded}
 				<div class="w-full transform scale-110 ">

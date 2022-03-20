@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	import ThemeToggle from './ThemeToggle.svelte';
 
 	const links = [
@@ -36,9 +37,10 @@
 							sveltekit:prefetch
 							sveltekit:noscroll>{link.anchor}</a
 						>
-						<div class="absolute -bottom-1 left-0 flex justify-center w-full">
+						<div class="absolute -bottom-0.5 left-0 flex justify-center w-full">
 							<div
 								class="w-1 h-1 bg-gray-900 dark:bg-gray-100 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300"
+								class:active={$page.url.pathname === link.href}
 							/>
 						</div>
 					</li>
@@ -60,6 +62,10 @@
 </nav>
 
 <style>
+	.active {
+		@apply opacity-100 translate-y-0;
+	}
+
 	ul.flex:hover > *:not(.text-opacity-40) > a,
 	ul.flex:hover > *:not(.text-opacity-40) > div {
 		opacity: 0.4;
