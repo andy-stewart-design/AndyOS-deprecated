@@ -49,6 +49,9 @@ const config = {
 			spacing: {
 				'18': '4.5rem',
 			},
+			transitionProperty: {
+				'ot': 'opacity, transform',
+			},
 			transitionTimingFunction: {
 				'in-out-cubic': 'cubic-bezier(0.65, 0, 0.35, 1)',
 				'in-cubic': 'cubic-bezier(0.32, 0, 0.67, 0)',

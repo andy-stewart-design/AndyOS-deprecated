@@ -9,7 +9,7 @@
 </script>
 
 <PgTransSimple>
-	<main class="relative w-full h-screen py-24 md:py-16 md:pl-18">
+	<main class="relative w-full min-h-screen py-24 md:py-16 md:pl-18">
 		<div
 			class="absolute top-0 left-0 w-full h-full bg-gradient-to-tl from-rose-700 to-orange-400"
 		/>
@@ -23,7 +23,7 @@
 						<div class="w-16">
 							<AndyLogo />
 						</div>
-						<h1 class="text-4xl md:text-5xl font-bold">
+						<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold">
 							Andy Stewart <span
 								class="text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
 								>designs future-focused visual systems—often for screens, sometimes not.</span
@@ -34,8 +34,55 @@
 							technology. He is currently the digital creative director at <a
 								class="text-black text-opacity-100 dark:text-gray-100 dark:text-opacity-100"
 								href="/">Turnstyle</a
-							>.
+							>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, odit minus
+							harum eum cum pariatur fugit reprehenderit.
 						</p>
+						<div class="flex gap-8">
+							<a
+								href="/work"
+								class="flex items-center gap-2 font-bold text-lg"
+								sveltekit:noscroll
+								sveltekit:prefetch
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-8 w-8"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+									/>
+								</svg>
+								Work
+							</a>
+							<a
+								href="/about"
+								class="flex items-center gap-2 font-bold text-lg"
+								sveltekit:noscroll
+								sveltekit:prefetch
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-8 w-8"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+								About
+							</a>
+						</div>
 					</div>
 				</AppWindow>
 			</div>
