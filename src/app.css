@@ -22,6 +22,12 @@
         font-weight: 700;
         src:  url('/fonts/Aeonik-Black.woff2') format('woff2');
     }
+    @font-face {
+        font-family: 'Andy Mono';
+        font-style: normal;
+        font-weight: 400;
+        src:  url('/fonts/AeonikMonoTRIAL-Regular.otf') format('opentype');
+    }
 }
 
 * {

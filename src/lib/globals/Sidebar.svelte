@@ -10,7 +10,7 @@
 		class="relative bg-gray-200 dark:bg-black bg-opacity-20 dark:bg-opacity-20 w-full md:w-18 h-16 md:h-screen"
 	>
 		<div
-			class="absolute top-0 md:top-18 left-16 md:left-0 flex justify-center items-center w-full md:w-[100vh] h-16 md:h-18 md:origin-top-left md:rotate-90 md:translate-x-18 pointer-events-none opacity-60"
+			class="absolute top-0 md:top-18 left-16 md:left-0 flex justify-center items-center font-mono w-full md:w-[100vh] h-16 md:h-18 md:origin-top-left md:rotate-90 md:translate-x-18 pointer-events-none opacity-60"
 		>
 			<Marquee
 				contents="Strategy + Design + Code + Illustration + Motion +"
