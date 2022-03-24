@@ -24,7 +24,7 @@
 </script>
 
 <div
-	class="fixed bottom-8 right-8 backdrop-blur-sm border border-black border-opacity-10 dark:border-gray-100 dark:border-opacity-10 w-16 h-16 rounded-full shadow-xl z-40 overflow-hidden md:hidden"
+	class="fixed bottom-6 right-2 backdrop-blur-sm border border-black border-opacity-10 dark:border-gray-100 dark:border-opacity-10 w-14 h-14 rounded-full shadow-xl z-40 overflow-hidden md:hidden"
 	on:click={() => (isOpen = !isOpen)}
 >
 	<div
@@ -48,7 +48,7 @@
 </div>
 
 <nav
-	class="fixed bottom-28 right-8 md:bottom-12 md:left-1/2 md:right-auto md:-translate-x-1/2 md:ml-8 backdrop-blur-sm border border-black border-opacity-10 dark:border-gray-100 dark:border-opacity-10 rounded-2xl md:rounded-full shadow-xl z-40 opacity-0 -translate-y-8 md:opacity-100 md:translate-y-0 transition-ot duration-500 ease-in-quint"
+	class="fixed bottom-24 right-2 md:bottom-12 md:left-1/2 md:right-auto md:-translate-x-1/2 md:ml-8 backdrop-blur-sm border border-black border-opacity-10 dark:border-gray-100 dark:border-opacity-10 rounded-2xl md:rounded-full shadow-xl z-40 opacity-0 -translate-y-8 md:opacity-100 md:translate-y-0 transition-ot md:transition-none duration-500 ease-in-quint"
 	class:isOpen
 >
 	<div
@@ -61,7 +61,7 @@
 						class="group relative py-4 md:py-1 px-2 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 pointer-events-auto"
 					>
 						<a
-							class="text-black dark:text-gray-100 text-lg md:text-base font-bold py-2 px-4 rounded-full transition-opacity duration-300"
+							class="text-black dark:text-gray-100 text-lg md:text-base font-medium py-2 px-4 rounded-full transition-opacity duration-300"
 							href={link.href}
 							sveltekit:prefetch
 							sveltekit:noscroll>{link.anchor}</a
@@ -77,7 +77,7 @@
 					</li>
 				{:else}
 					<li
-						class="text-black text-opacity-40 dark:text-gray-100 dark:text-opacity-40 py-4 md:py-1 px-6 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 cursor-not-allowed pointer-events-auto"
+						class="text-black text-opacity-40 dark:text-gray-100 dark:text-opacity-40 font-medium py-4 md:py-1 px-6 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 cursor-not-allowed pointer-events-auto"
 					>
 						{link.anchor}
 					</li>

@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		{#if isOpen}
-			<div class="bg-gray-200 dark:bg-black p-8" transition:slide|local>
+			<div class="bg-gray-200 dark:bg-black" transition:slide|local>
 				<slot />
 			</div>
 		{/if}

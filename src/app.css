@@ -5,16 +5,22 @@
 
 @layer base {
     @font-face {
-        font-family: 'Space Grotesk';
+        font-family: 'Andy Sans';
         font-style: normal;
         font-weight: 400;
-        src:  url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+        src:  url('/fonts/Aeonik-Regular.woff2') format('woff2');
     }
     @font-face {
-        font-family: 'Space Grotesk';
+        font-family: 'Andy Sans';
+        font-style: normal;
+        font-weight: 500;
+        src:  url('/fonts/Aeonik-Bold.woff2') format('woff2');
+    }
+    @font-face {
+        font-family: 'Andy Sans';
         font-style: normal;
         font-weight: 700;
-        src:  url('/fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+        src:  url('/fonts/Aeonik-Black.woff2') format('woff2');
     }
 }
 
@@ -24,6 +30,7 @@
 
 html {
     @apply bg-black font-sans;
+    font-feature-settings: 'ss02', 'zero', 'tnum';
 }
 
 .lazy-media {

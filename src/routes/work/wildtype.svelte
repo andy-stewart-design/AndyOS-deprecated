@@ -16,7 +16,9 @@
 				class="absolute top-0 left-0 w-full h-full object-cover opacity-80"
 				alt="kn"
 			/>
-			<h2 class="relative text-8xl font-bold text-center w-full">Seafood Without the Sea</h2>
+			<h2 class="relative text-8xl font-bold text-center uppercase tracking-tighter w-full">
+				Seafood Without the Sea
+			</h2>
 		</div>
 		<section class="px-4">
 			<ProjectIntro content={intro} />
