@@ -7,11 +7,13 @@
 <div
 	class="grid-container grid grid-cols-project-s md:grid-cols-project-l gap-y-1 md:gap-y-4 gap-x-8 md:gap-x-12 w-full"
 >
-	<h2 class="col-span-1 md:col-span-2 text-2xl font-bold sm:text-3xl md:text-5xl xl:text-6xl mb-4">
+	<h2
+		class="col-span-1 md:col-span-2 text-2xl font-medium sm:text-3xl md:text-5xl xl:text-6xl mb-4"
+	>
 		All Projects
 	</h2>
 	<h2
-		class="col-span-1 md:col-span-2 text-2xl font-bold sm:text-3xl md:text-5xl xl:text-6xl md:text-right"
+		class="col-span-1 md:col-span-2 text-2xl font-medium sm:text-3xl md:text-5xl xl:text-6xl md:text-right"
 	>
 		2018-22
 	</h2>

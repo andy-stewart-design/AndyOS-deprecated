@@ -7,14 +7,18 @@
 
 <PgTransSimple>
 	<ScrollTrigger>
-		<div class="relative w-full pt-32 md:pt-24 md:pl-18 pb-40">
-			<section class="relative grid grid-cols-2 gap-12 px-4 md:px-16">
-				<h1 class="text-5xl leading-tight font-bold col-span-2">
-					I create warm, smart brands and clear interfaces for companies who are ready to reimagine.
+		<div class="relative w-full md:pl-18 pb-40">
+			<section class="flex flex-col justify-between h-[75vh] pt-32 md:pt-14 px-4 md:px-8 pb-16">
+				<h1 class="text-9xl font-bold text-center uppercase leading-none tracking-tight">
+					About Andy
 				</h1>
-
+				<p class="font-mono text-center">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</section>
+			<section class="relative grid lg:grid-cols-2 gap-12 px-4 md:px-8">
 				<div class="grid gap-6 auto-rows-min">
-					<h1 class="font-bold text-sm uppercase tracking-widest">About Andy</h1>
+					<!-- <h1 class="font-mono">About Andy</h1> -->
 					<p class="text-xl">
 						I believe that design works on the mind through the eyes. In the right context, with the
 						right tone of voice, design has the ability to spark emotion, engage the imagination and

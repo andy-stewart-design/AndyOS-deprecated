@@ -13,9 +13,14 @@
 </script>
 
 <PgTransSimple>
-	<main class="relative w-full pt-32 md:pt-24 md:pl-18 pb-40">
+	<main class="relative w-full md:pl-18 pb-40">
+		<section class="flex flex-col justify-between h-[75vh] pt-32 md:pt-14 px-4 md:px-8 pb-16">
+			<h1 class="text-9xl font-bold text-center uppercase leading-none tracking-tight">
+				Portfolio
+			</h1>
+			<p class="font-mono text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		</section>
 		<section class="grid gap-y-12 px-4 md:px-8">
-			<h1 class="text-6xl font-bold">Portfolio</h1>
 			<div class="grid md:grid-cols-2 gap-x-6 gap-y-12">
 				{#each caseStudies as caseStudy}
 					<WorkCard
