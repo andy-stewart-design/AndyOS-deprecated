@@ -1,14 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
+	import ComingSoon from '$lib/icons/ComingSoon.svelte';
 
 	export let canHover = false;
-	export let client = 'Wildtype';
-	export let category = 'Web';
-	export let year = '2021';
-	export let imgSrc = '/img/work/index/wildtype-featured.jpeg';
-	export let vidSrc = '/img/work/index/wildtype-browser.mp4';
-	export let href = '/work/wildtype';
-	export let alt = 'image alt text';
+	export let client, category, year, imgSrc, vidSrc, href, alt;
 
 	let isLoaded = true;
 	let paused = true;
@@ -18,25 +13,25 @@
 	onMount(() => (isLoaded = true));
 </script>
 
-<div>
+<div class="group">
 	<a
-		class="group mb-12"
+		class="mb-12"
+		class:pointer-events-none={!vidSrc}
 		{href}
 		on:mouseenter={enter}
 		on:mouseleave={leave}
 		sveltekit:noscroll
 		sveltekit:prefetch
 	>
-		<div class="relative w-full rounded-2xl overflow-hidden mb-4 bg-black transition-fix">
+		<div class="relative w-full rounded-3xl overflow-hidden mb-4 bg-black transition-fix">
 			{#if isLoaded}
-				<div class="w-full transform scale-110 ">
+				<div class="relative w-full transform scale-110 ">
 					<div class="relative w-full transition-opacity duration-300 group-hover:opacity-75">
 						<img class="relative w-full aspect-square object-cover" src={imgSrc} {alt} />
 						{#if canHover}
 							<div
 								class="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 							>
-								<!-- <img class="w-full h-full object-cover blur-lg" src={imgSrc} {alt} /> -->
 								<div
 									class="w-full h-full bg-center bg-cover blur-lg"
 									style="background-image: url('{imgSrc}');"
@@ -45,7 +40,7 @@
 						{/if}
 					</div>
 				</div>
-				{#if canHover}
+				{#if canHover && vidSrc}
 					<video
 						class="absolute top-1/2 left-1/2 w-3/4 transform -translate-y-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg"
 						src={vidSrc}
@@ -56,26 +51,44 @@
 					>
 						<track kind="captions" />
 					</video>
+				{:else if canHover}
+					<div
+						class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-300 group-hover:opacity-100 w-1/2 max-w-[256px] text-gray-200"
+					>
+						<div class="animate-rotate" style="animation-duration: 20s">
+							<ComingSoon />
+						</div>
+					</div>
+				{/if}
+				{#if !vidSrc}
+					<div
+						class="absolute top-4 left-4 font-medium text-black bg-white bg-opacity-75 py-0.5 px-3 rounded-full border border-black border-opacity-20"
+					>
+						<p>Coming Soon</p>
+					</div>
 				{/if}
 			{/if}
 		</div>
 	</a>
-	<div class="flex">
-		<h3 class="grow text-xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl uppercase">
+	<div class="grid grid-cols-2">
+		<h3 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl">
 			{client}
 		</h3>
-		<h4 class="grow text-xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl uppercase opacity-40">
-			{category} <span class="sup tracking-tight">{year}</span>
-		</h4>
+		<div>
+			<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1 opacity-40">
+				{category}
+			</h4>
+			<h4 class="sups text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl opacity-40">
+				{year}
+			</h4>
+		</div>
 	</div>
 </div>
 
 <style>
-	.sup {
-		font-feature-settings: 'sups';
-		font-weight: lighter;
+	.sups {
+		font-feature-settings: 'sups', 'zero';
 	}
-
 	.transition-fix {
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;

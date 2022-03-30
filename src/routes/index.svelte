@@ -4,7 +4,7 @@
 	import { duration } from '$lib/stores/mainStore';
 	import PgTransSimple from '$lib/globals/PgTransSimple.svelte';
 	import AppWindow from '$lib/components/AppWindow.svelte';
-	import AndyLogo from '$lib/icons/AndyLogo.svelte';
+	import Smiley from '$lib/icons/Smiley.svelte';
 	// import { draggable } from '@neodrag/svelte';
 </script>
 
@@ -21,12 +21,12 @@
 				<AppWindow title="welcome.md">
 					<div class="grid gap-y-6 pt-8 px-4 pb-4 overflow-scroll">
 						<div class="w-16">
-							<AndyLogo />
+							<Smiley />
 						</div>
-						<h1 class="text-4xl md:text-5xl font-bold leading-[1.2]">
+						<h1 class="text-4xl md:text-5xl font-medium leading-[1.1]">
 							Andy Stewart <span
 								class="text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
-								>designs future-focused visual systems—often for screens, sometimes not.</span
+								>designs future-focused visual systems. Often for screens, sometimes not.</span
 							>
 						</h1>
 						<p class="text-lg text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60">

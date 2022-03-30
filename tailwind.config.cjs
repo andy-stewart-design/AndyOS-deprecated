@@ -2,11 +2,6 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
-		fontFamily: {
-			'sans': ['Andy Sans', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
-			],
-			'mono': ['Andy Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace']
-		},
 		colors: {
 			transparent: 'transparent',
 			current: 'currentColor',
@@ -27,9 +22,22 @@ const config = {
 				700: '#be123c'
 			}
 		},
+		fontFamily: {
+			'sans': ['Andy Sans', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+			],
+			'mono': ['Andy Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace']
+		},
+		screens: {
+			'sm': '640px',
+			'md': '768px',
+			'lg': '1024px',
+			'xl': '1280px',
+			'2xl': '1440px',
+		},
 		extend: {
 			animation: {
 				'marquee': 'marquee linear infinite',
+				'rotate': 'rotate linear infinite',
 			},
 			aspectRatio: {
 				'film': '3 / 2',
@@ -42,6 +50,9 @@ const config = {
 			keyframes: {
 				marquee: {
 					'100%': { 'transform': 'translateX(-100%)' },
+				},
+				rotate: {
+					'100%': { 'transform': 'rotate(360deg)' },
 				},
 			},
 			screens: {

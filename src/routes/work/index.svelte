@@ -6,22 +6,31 @@
 	import { caseStudies } from '$lib/data/caseStudies.js';
 
 	let canHover;
+	let loaded = false;
 
 	onMount(() => {
 		canHover = window.matchMedia('(hover: hover)').matches;
+		setTimeout(() => {
+			loaded = true;
+		}, 400);
 	});
 </script>
 
 <PgTransSimple>
-	<main class="relative w-full md:pl-18 pb-40">
-		<section class="flex flex-col justify-between h-[75vh] pt-32 md:pt-14 px-4 md:px-8 pb-16">
-			<h1 class="text-9xl font-bold text-center uppercase leading-none tracking-tight">
+	<main class="relative w-full md:pl-[73px] pb-40">
+		<section class="flex flex-col justify-between h-[80vh] pt-32 md:pt-14 px-4 md:px-8 pb-16">
+			<h1
+				class="text-6xl sm:text-8xl lg:text-9xl font-bold text-center uppercase leading-none tracking-tight"
+			>
 				Portfolio
 			</h1>
 			<p class="font-mono text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 		</section>
-		<section class="grid gap-y-12 px-4 md:px-8">
-			<div class="grid md:grid-cols-2 gap-x-6 gap-y-12">
+		<section
+			class="px-4 md:px-8 xl:px-16 2xl:px-24 translate-y-[30vh] opacity-0 transition-ot ease-out-cubic duration-1000"
+			class:loaded
+		>
+			<div class="grid md:grid-cols-2 gap-x-8 gap-y-16">
 				{#each caseStudies as caseStudy}
 					<WorkCard
 						{canHover}
@@ -36,8 +45,14 @@
 				{/each}
 			</div>
 		</section>
-		<section class="pt-24 px-2 md:px-8">
+		<section class="pt-24 px-4 md:px-8 xl:px-16 2xl:px-24 ">
 			<ProjectList />
 		</section>
 	</main>
 </PgTransSimple>
+
+<style>
+	.loaded {
+		@apply translate-y-0 opacity-100;
+	}
+</style>

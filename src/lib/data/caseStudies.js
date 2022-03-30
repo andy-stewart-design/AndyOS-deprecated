@@ -10,11 +10,29 @@ export const caseStudies = [
     },
     {
         client: 'Substantial',
-        category: 'Web',
+        category: 'Brand, Web',
         year: '2022',
         imgSrc: '/img/work/index/substantial-featured.jpeg',
-        vidSrc: '/img/work/index/substantial-browser.mp4',
+        // vidSrc: '/img/work/index/substantial-browser.mp4',
         href: '/work',
         alt: 'A woman looking at the Substantial website on a tablet'
+    },
+    {
+        client: 'Cipher',
+        category: 'Brand, Web',
+        year: '2022',
+        imgSrc: '/img/work/index/cipher-featured-2.jpg',
+        // vidSrc: '/img/work/index/substantial-browser.mp4',
+        href: '/work',
+        alt: 'An editorial illustration about clean energy'
+    },
+    {
+        client: `Eva’s Wild`,
+        category: 'Brand',
+        year: '2022',
+        imgSrc: '/img/work/index/evas-featured-4.jpg',
+        // vidSrc: '/img/work/index/substantial-browser.mp4',
+        href: '/work',
+        alt: 'An editorial illustration for Cipher News'
     }
 ];

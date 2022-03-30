@@ -1,14 +1,22 @@
 <script>
+	import { onMount } from 'svelte';
 	import PgTransSimple from '$lib/globals/PgTransSimple.svelte';
 	import ScrollTrigger from '$lib/globals/ScrollTrigger.svelte';
-	import Image from '$lib/components/Image.svelte';
-	import Video from '$lib/components/Video.svelte';
+	// import Image from '$lib/components/Image.svelte';
+
+	let loaded = false;
+
+	onMount(() => {
+		setTimeout(() => {
+			loaded = true;
+		}, 400);
+	});
 </script>
 
 <PgTransSimple>
 	<ScrollTrigger>
 		<div class="relative w-full md:pl-18 pb-40">
-			<section class="flex flex-col justify-between h-[75vh] pt-32 md:pt-14 px-4 md:px-8 pb-16">
+			<section class="flex flex-col justify-between h-[80vh] pt-32 md:pt-14 px-4 md:px-8 pb-16">
 				<h1 class="text-9xl font-bold text-center uppercase leading-none tracking-tight">
 					About Andy
 				</h1>
@@ -16,7 +24,10 @@
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				</p>
 			</section>
-			<section class="relative grid lg:grid-cols-2 gap-12 px-4 md:px-8">
+			<section
+				class="relative grid lg:grid-cols-2 gap-12 px-4 md:px-8 translate-y-1/3 opacity-0 transition-ot duration-1000"
+				class:loaded
+			>
 				<div class="grid gap-6 auto-rows-min">
 					<!-- <h1 class="font-mono">About Andy</h1> -->
 					<p class="text-xl">
@@ -38,11 +49,12 @@
 						is defined by my love for aesthetics, intuitive experiences, and solving challenging
 						business problems.
 					</p>
-					<div class="grid gap-2 auto-rows-min">
-						<p class="text-xl">Listening to</p>
-						<p class="text-xl">Instagram</p>
-						<p class="text-xl">Twitter</p>
-						<p class="text-xl">Linkedin</p>
+					<div class="grid gap-3 auto-rows-min">
+						<p class="font-mono">Details</p>
+						<p class="font-medium text-2xl">Instagram</p>
+						<p class="font-medium text-2xl">Github</p>
+						<p class="font-medium text-2xl opacity-30">Listening to</p>
+						<p class="font-medium text-2xl opacity-30">Uses</p>
 					</div>
 				</div>
 				<img
@@ -54,3 +66,9 @@
 		</div>
 	</ScrollTrigger>
 </PgTransSimple>
+
+<style>
+	.loaded {
+		@apply translate-y-0 opacity-100;
+	}
+</style>
