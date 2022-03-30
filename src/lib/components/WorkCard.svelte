@@ -62,7 +62,7 @@
 				{/if}
 				{#if !vidSrc}
 					<div
-						class="absolute top-4 left-4 font-medium text-black bg-white bg-opacity-75 py-0.5 px-3 rounded-full border border-black border-opacity-20"
+						class="absolute top-4 left-4 text-white bg-black bg-opacity-75 py-0.5 pt-px px-3 rounded-full border border-gray-200 border-opacity-20"
 					>
 						<p>Coming Soon</p>
 					</div>
@@ -75,9 +75,18 @@
 			{client}
 		</h3>
 		<div>
-			<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1 opacity-40">
-				{category}
-			</h4>
+			<div class="flex gap-x-2">
+				{#each category as item, index}
+					<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1 opacity-50">
+						{item}
+					</h4>
+					{#if index < category.length - 1}
+						<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1 opacity-20">
+							/
+						</h4>
+					{/if}
+				{/each}
+			</div>
 			<h4 class="sups text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl opacity-40">
 				{year}
 			</h4>

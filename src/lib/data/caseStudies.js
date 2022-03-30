@@ -1,7 +1,7 @@
 export const caseStudies = [
     {
         client: 'Wildtype',
-        category: 'Web',
+        category: ['Web'],
         year: '2021',
         imgSrc: '/img/work/index/wildtype-featured.jpeg',
         vidSrc: '/img/work/index/wildtype-browser.mp4',
@@ -10,7 +10,7 @@ export const caseStudies = [
     },
     {
         client: 'Substantial',
-        category: 'Brand, Web',
+        category: ['Brand', 'Web'],
         year: '2022',
         imgSrc: '/img/work/index/substantial-featured.jpeg',
         // vidSrc: '/img/work/index/substantial-browser.mp4',
@@ -19,7 +19,7 @@ export const caseStudies = [
     },
     {
         client: 'Cipher',
-        category: 'Brand, Web',
+        category: ['Brand', 'Web'],
         year: '2022',
         imgSrc: '/img/work/index/cipher-featured-2.jpg',
         // vidSrc: '/img/work/index/substantial-browser.mp4',
@@ -28,7 +28,7 @@ export const caseStudies = [
     },
     {
         client: `Eva’s Wild`,
-        category: 'Brand',
+        category: ['Brand'],
         year: '2022',
         imgSrc: '/img/work/index/evas-featured-4.jpg',
         // vidSrc: '/img/work/index/substantial-browser.mp4',
