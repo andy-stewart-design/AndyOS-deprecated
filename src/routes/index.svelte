@@ -10,9 +10,6 @@
 
 <PgTransSimple>
 	<main class="relative w-full min-h-screen py-20 md:py-16 md:pl-18">
-		<div
-			class="absolute top-0 left-0 w-full h-full bg-gradient-to-tl from-rose-700 to-orange-400"
-		/>
 		<section class="relative flex justify-center w-full px-2 md:px-8">
 			<div
 				class="relative w-full md:max-w-4xl pb-4"
@@ -20,7 +17,7 @@
 			>
 				<AppWindow title="welcome.md">
 					<div class="grid gap-y-6 pt-8 px-4 pb-4 overflow-scroll">
-						<div class="w-16">
+						<div class="w-16 animate-rotate text-neon" style="animation-duration: 10s">
 							<Smiley />
 						</div>
 						<h1 class="text-4xl md:text-5xl font-medium leading-[1.1]">
@@ -45,7 +42,7 @@
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-8 w-8"
+									class="h-8 w-8 text-neon"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -67,7 +64,7 @@
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-8 w-8"
+									class="h-8 w-8 text-neon"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"

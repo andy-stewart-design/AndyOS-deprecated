@@ -1,6 +1,5 @@
 <script>
 	import Sidebar from './Sidebar.svelte';
-	import ThemeToggle from './ThemeToggle.svelte';
 	import Menu from './Menu.svelte';
 </script>
 

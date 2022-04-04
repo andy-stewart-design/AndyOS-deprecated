@@ -21,7 +21,7 @@ export const caseStudies = [
         client: 'Cipher',
         category: ['Brand', 'Web'],
         year: '2022',
-        imgSrc: '/img/work/index/cipher-featured-2.jpg',
+        imgSrc: '/img/work/index/cipher-featured.jpeg',
         // vidSrc: '/img/work/index/substantial-browser.mp4',
         href: '/work',
         alt: 'An editorial illustration about clean energy'
@@ -30,9 +30,27 @@ export const caseStudies = [
         client: `Eva’s Wild`,
         category: ['Brand'],
         year: '2022',
-        imgSrc: '/img/work/index/evas-featured-4.jpg',
+        imgSrc: '/img/work/index/evas-featured.jpeg',
         // vidSrc: '/img/work/index/substantial-browser.mp4',
         href: '/work',
         alt: 'An editorial illustration for Cipher News'
+    },
+    {
+        client: `Teague`,
+        category: ['Web'],
+        year: '2022',
+        imgSrc: '/img/work/index/teague-featured.jpeg',
+        // vidSrc: '/img/work/index/substantial-browser.mp4',
+        href: '/work',
+        alt: 'Mobile screenshots of the Teague website'
+    },
+    {
+        client: `HTCAW`,
+        category: ['Brand'],
+        year: '2022',
+        imgSrc: '/img/work/index/htcaw-featured.jpeg',
+        // vidSrc: '/img/work/index/substantial-browser.mp4',
+        href: '/work',
+        alt: 'Mobile screenshots of the Teague website'
     }
 ];

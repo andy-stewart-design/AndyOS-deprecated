@@ -15,7 +15,6 @@
 
 <div class="group">
 	<a
-		class="mb-12"
 		class:pointer-events-none={!vidSrc}
 		{href}
 		on:mouseenter={enter}
@@ -64,32 +63,30 @@
 					<div
 						class="absolute top-4 left-4 text-white bg-black bg-opacity-75 py-0.5 pt-px px-3 rounded-full border border-gray-200 border-opacity-20"
 					>
-						<p>Coming Soon</p>
+						<p class="font-medium tracking-wide">Coming Soon</p>
 					</div>
 				{/if}
 			{/if}
 		</div>
 	</a>
-	<div class="grid grid-cols-2">
-		<h3 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl">
-			{client}
-		</h3>
+	<div class="grid grid-cols-2 dark:group-hover:text-neon transition-colors duration-300">
 		<div>
-			<div class="flex gap-x-2">
-				{#each category as item, index}
-					<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1 opacity-50">
-						{item}
-					</h4>
-					{#if index < category.length - 1}
-						<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1 opacity-20">
-							/
-						</h4>
-					{/if}
-				{/each}
-			</div>
-			<h4 class="sups text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl opacity-40">
+			<h3 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1">
+				{client}
+			</h3>
+			<h4 class="sups text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl">
 				{year}
 			</h4>
+		</div>
+		<div class="flex gap-x-2">
+			{#each category as item, index}
+				<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl">
+					{item}
+				</h4>
+				{#if index < category.length - 1}
+					<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl opacity-20">/</h4>
+				{/if}
+			{/each}
 		</div>
 	</div>
 </div>

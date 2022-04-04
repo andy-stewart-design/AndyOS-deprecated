@@ -36,7 +36,8 @@
 
 html {
     @apply bg-black font-sans;
-    font-feature-settings: 'ss02', 'zero', 'tnum';
+    font-feature-settings: 'ss02';
+    /* font-feature-settings: 'ss02', 'zero', 'tnum'; */
 }
 
 .lazy-media {
