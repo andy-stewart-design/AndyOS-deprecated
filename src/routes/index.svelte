@@ -17,7 +17,10 @@
 			>
 				<AppWindow title="welcome.md">
 					<div class="grid gap-y-6 pt-8 px-4 pb-4 overflow-scroll">
-						<div class="w-16 animate-rotate text-neon" style="animation-duration: 10s">
+						<div
+							class="w-16 animate-rotate text-blue dark:text-neon"
+							style="animation-duration: 10s"
+						>
 							<Smiley />
 						</div>
 						<h1 class="text-4xl md:text-5xl font-medium leading-[1.1]">
@@ -33,16 +36,18 @@
 								href="/">Turnstyle</a
 							>.
 						</p>
-						<div class="flex gap-8 border-t border-gray-200 border-opacity-20 pt-4">
+						<div
+							class="flex gap-8 border-t border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 pt-4"
+						>
 							<a
 								href="/work"
-								class="flex items-center gap-2 font-medium text-xl"
+								class="flex items-center gap-2 font-medium text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 								sveltekit:noscroll
 								sveltekit:prefetch
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-8 w-8 text-neon"
+									class="h-8 w-8 text-blue dark:text-neon"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -58,13 +63,13 @@
 							</a>
 							<a
 								href="/about"
-								class="flex items-center gap-2 font-medium text-xl"
+								class="flex items-center gap-2 font-medium text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 								sveltekit:noscroll
 								sveltekit:prefetch
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-8 w-8 text-neon"
+									class="h-8 w-8 text-blue dark:text-neon"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"

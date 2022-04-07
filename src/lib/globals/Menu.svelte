@@ -52,7 +52,7 @@
 	class:isOpen
 >
 	<div
-		class="bg-gray-200 bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-70 py-1 md:py-3 px-1 rounded-2xl md:rounded-full"
+		class="bg-white bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-70 py-1 md:py-3 px-1 rounded-2xl md:rounded-full"
 	>
 		<ul class="flex flex-col md:flex-row md:items-center pointer-events-none w-48 md:w-auto">
 			{#each links as link, index}

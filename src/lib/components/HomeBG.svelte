@@ -24,7 +24,6 @@
 			ctx.arc(this.x, this.y, this.r, 0, twoPi, false);
 			ctx.fill();
 		}
-		// update() {}
 	}
 
 	function set() {
@@ -41,17 +40,21 @@
 		const cY = $windowHeight / 2;
 		const r = $windowHeight;
 
-		const c1vX = cX + Math.cos(count) * cX;
-		const c1vY = cY + (Math.sin(count * 2) / 2) * cY;
-		const c1col1 = 'rgba(20, 63, 245,0.4)';
-		const c1col2 = 'rgba(20, 63, 245,0.0)';
-		const c2vX = cX + (Math.sin(count * 0.75 * 2) / 2) * cX;
-		const c2vY = cY + Math.cos(count * 0.75) * cY;
-		const c2col1 = 'rgba(180, 9, 255,0.4)';
-		const c2col2 = 'rgba(180, 9, 255,0.0)';
+		const c1 = {
+			vX: cX + Math.cos(count) * cX,
+			vY: cY + (Math.sin(count * 2) / 2) * cY,
+			start: 'rgba(20, 63, 245,0.4)',
+			stop: 'rgba(20, 63, 245,0.0)'
+		};
+		const c2 = {
+			vX: cX + (Math.sin(count * 0.75 * 2) / 2) * cX,
+			vY: cY + Math.cos(count * 0.75) * cY,
+			start: 'rgba(180, 9, 255,0.4)',
+			stop: 'rgba(180, 9, 255,0.0)'
+		};
 
-		const circ01 = new Circle(c1vX, c1vY, r, c1col1, c1col2, count);
-		const circ02 = new Circle(c2vX, c2vY, r, c2col1, c2col2, count);
+		const circ01 = new Circle(c1.vX, c1.vY, r, c1.start, c1.stop, count);
+		const circ02 = new Circle(c2.vX, c2.vY, r, c2.start, c2.stop, count);
 		circ01.draw();
 		circ02.draw();
 
@@ -70,6 +73,4 @@
 	});
 </script>
 
-<div class="relative w-screen h-screen">
-	<canvas bind:this={canvas} class="opacity-70 w-screen h-screen" />
-</div>
+<canvas bind:this={canvas} class="w-full h-full" />

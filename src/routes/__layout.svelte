@@ -1,8 +1,12 @@
 <script>
 	import '../app.css';
+	import { page } from '$app/stores';
 	import Nav from '$lib/globals/Nav.svelte';
 	import HomeBg from '$lib/components/HomeBG.svelte';
 	import { windowWidth, windowHeight } from '$lib/stores/mainStore';
+
+	let home;
+	$: $page.url.pathname === '/' ? (home = true) : (home = false);
 </script>
 
 <svelte:head>
@@ -15,8 +19,10 @@
 	<Nav />
 	<div class="fixed top-0 left-0 w-screen h-screen">
 		<HomeBg />
+		<div
+			class="absolute top-0 left-0 bottom-0 right-0 bg-gray-200 dark:bg-black opacity-30 transition-opacity duration-[400]"
+			class:opacity-60={!home}
+		/>
 	</div>
-	<!-- <div class="opacity-0"> -->
 	<slot />
-	<!-- </div> -->
 </div>

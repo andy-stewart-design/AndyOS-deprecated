@@ -69,7 +69,9 @@
 			{/if}
 		</div>
 	</a>
-	<div class="grid grid-cols-2 dark:group-hover:text-neon transition-colors duration-300">
+	<div
+		class="grid grid-cols-2 group-hover:text-blue dark:group-hover:text-neon transition-colors duration-300"
+	>
 		<div>
 			<h3 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1">
 				{client}

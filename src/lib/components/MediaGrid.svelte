@@ -34,7 +34,7 @@
 			{:else if item.type === 'text'}
 				<div class={setText(item.width)}>
 					<!-- <div class="w-full h-px bg-zinc-800 dark:bg-zinc-200 mb-12" /> -->
-					<h3 class="text-4xl font-bold mb-6" class:hidden={!item.head}>{item.head}</h3>
+					<h3 class="text-4xl font-medium mb-6" class:hidden={!item.head}>{item.head}</h3>
 					<p class="text-xl" class:hidden={!item.body}>{item.body}</p>
 				</div>
 			{:else if item.type === 'video'}

@@ -8,7 +8,7 @@
 </script>
 
 <PgTransSimple>
-	<main class="relative w-full md:pl-18 pb-40">
+	<main class="relative w-full md:pl-[73px] pb-40 bg-gray-100 dark:bg-black">
 		<ProjectSubnav content={intro} />
 		<div class="relative flex items-center w-full h-[calc(100vh-4.5rem)] p-6 bg-black">
 			<img
@@ -16,7 +16,9 @@
 				class="absolute top-0 left-0 w-full h-full object-cover opacity-80"
 				alt="kn"
 			/>
-			<h2 class="relative text-[144px] font-bold text-center uppercase tracking-tight w-full">
+			<h2
+				class="relative text-[144px] font-bold text-center text-gray-200 uppercase tracking-tight w-full"
+			>
 				{intro.client}
 			</h2>
 		</div>

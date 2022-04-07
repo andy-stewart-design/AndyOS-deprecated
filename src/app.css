@@ -14,7 +14,7 @@
         font-family: 'Andy Sans';
         font-style: normal;
         font-weight: 500;
-        src:  url('/fonts/Aeonik-Bold.woff2') format('woff2');
+        src:  url('/fonts/Aeonik-Medium.woff2') format('woff2');
     }
     @font-face {
         font-family: 'Andy Sans';
@@ -27,6 +27,18 @@
         font-style: normal;
         font-weight: 400;
         src:  url('/fonts/AeonikMonoTRIAL-Regular.otf') format('opentype');
+    }
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+    ::-moz-selection { /* Code for Firefox */
+        color: #e4e4e7;
+        background: #143ff5;
+    }
+
+    ::selection {
+        color: #e4e4e7;
+        background: #143ff5;
     }
 }
 

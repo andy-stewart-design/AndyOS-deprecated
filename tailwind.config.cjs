@@ -7,6 +7,7 @@ const config = {
 			current: 'currentColor',
 			'white': '#ffffff',
 			'black': '#0d0d0e',
+			'blue': '#143ff5',
 			'neon': '#d3fe04',
 			'gray': {
 				100: '#f4f4f5',

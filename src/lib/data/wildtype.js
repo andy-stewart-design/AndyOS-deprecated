@@ -7,8 +7,10 @@ export const intro = {
     client: 'Wildtype',
     headline: 'The Future of Seafood',
     descr: [
-        `Founded in 2016, Wildtype is an agtech company working to create the cleanest and most sustainable seafood on the planet, starting with salmon. As a growing startup in the cell-cultured meat industry, Wildtype's focus is how to grow salmon from cells in bioreactors, an alternative to traditional fishing and farming methods. If they succeed, this technology could have massive implications for global food security, the environment, and animal welfare.`,
-        `As they began growing their operation, Wildtype needed a website that better matched the scale of their ambitions. Rather than continuing to rely on an out-of-the-box website builder, they worked with us to create a bespoke digital experience that would allow them to promote their mission, increase the transparency of their work, connect with chefs and restaurateurs, and appeal to consumers who may be skeptical of lab-grown meat.`
+        `Founded in 2016, Wildtype is an agtech company working to create the cleanest and most sustainable seafood on the planet, starting with salmon. As a fast-growing startup in the emerging alternative meat industry, Wildtype focuses on growing salmon from directly cells—an alternative to traditional fishing and farming methods that has the potential to be truly transformative. If they're successful, this technology could have massive implications for global food security, the environment, and animal welfare.`,
+        `As they began to grow their operation, Wildtype needed a website that better matched the scale of their ambitions. Rather than continuing to rely on an out-of-the-box website builder, the company worked with Turnstyle to create a bespoke digital experience. We built on their new look to create a unique stage for them to show off their incredible work, allowing them to better promote their mission, increase the transparency of their work, connect with chefs and restaurateurs, and appeal to consumers who may be skeptical of lab-grown meat.
+
+        `
     ],
     scope: [
         'UX / IA',
@@ -44,7 +46,7 @@ export const assets = [
     },
     {
         type: 'text',
-        head: 'This is a Headline',
+        head: `One Head, Many Hats`,
         body: 'This was a unicorn of a project that engaged nearly all of my skills and interests. I served as the creative director and lead designer during all phases of the project, and was heavily involved from initial scoping and project definition through quality assurance testing and launch. In addition to leading the UX/UI and visual design efforts, I illustrated, animated, and prototyped, and contributed to development and implementation.',
         width: '1/2'
     },
@@ -76,8 +78,8 @@ export const assets = [
     },
     {
         type: 'text',
-        head: 'This is a Headline',
-        body: 'This was a unicorn of a project that engaged nearly all of my skills and interests. I served as the creative director and lead designer during all phases of the project, and was heavily involved from initial scoping and project definition through quality assurance testing and launch. In addition to leading the UX/UI and visual design efforts, I illustrated, animated, and prototyped, and contributed to development and implementation.',
+        head: `Gettin’ Jiggly With It`,
+        body: 'After evolving and launching their new brand, Wildtype sought to bring their visual system to life through an equally impressive digital experience. They wanted the site to capture the imperfect, wobbly aesthetic of their new identity—no small feat in a medium typified by straight lines and right angles. Breaking out of the box, we leverage generative design techniques to randomly morph and animate elements throughout the site, imbuing it with a feeling of dynamism and fluidity without sacrificing performance.',
         width: '1/1'
     },
     {
