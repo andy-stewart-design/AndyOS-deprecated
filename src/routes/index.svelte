@@ -23,25 +23,28 @@
 						>
 							<Smiley />
 						</div>
-						<h1 class="text-4xl md:text-5xl font-medium leading-[1.1]">
+						<h1 class="font-vf wght-med text-4xl md:text-5xl leading-[1.1]">
 							Andy Stewart <span
 								class="text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
 								>designs future-focused visual systems. Often for screens, sometimes not.</span
 							>
 						</h1>
-						<p class="text-lg text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60">
-							Andy Stewart is a graphic designer working at the intersection of brand and
-							technology. He is currently the digital creative director at <a
+						<p
+							class="font-vf wght-reg text-lg text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
+						>
+							Andy’s a seasoned designer working at the intersection of brand and technology. He's
+							currently the digital creative director at <a
 								class="text-black text-opacity-100 dark:text-gray-100 dark:text-opacity-100"
 								href="/">Turnstyle</a
-							>.
+							>, a small brand and web studio in Seattle. He's not currently accepting new projects,
+							but he is accepting new friends.
 						</p>
 						<div
 							class="flex gap-8 border-t border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 pt-4"
 						>
 							<a
 								href="/work"
-								class="flex items-center gap-2 font-medium text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
+								class="flex items-center gap-2 font-vf wght-semibold text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 								sveltekit:noscroll
 								sveltekit:prefetch
 							>
@@ -63,7 +66,7 @@
 							</a>
 							<a
 								href="/about"
-								class="flex items-center gap-2 font-medium text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
+								class="flex items-center gap-2 font-vf wght-semibold text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 								sveltekit:noscroll
 								sveltekit:prefetch
 							>

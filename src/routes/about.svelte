@@ -72,7 +72,7 @@
 							rel="external"
 							target="_blank">Codepen ↗</a
 						>
-						<p class="font-medium text-2xl opacity-30">Listening to</p>
+						<p class="font-medium text-2xl opacity-30">Playlist</p>
 						<p class="font-medium text-2xl opacity-30">Uses</p>
 					</div>
 				</div>

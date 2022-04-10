@@ -3,8 +3,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .wght-book {
+        font-variation-settings: 'wght' 400;
+    }
+    .wght-reg {
+        font-variation-settings: 'wght' 450;
+    }
+    .wght-med {
+        font-variation-settings: 'wght' 550;
+    }
+    .wght-semibold {
+        font-variation-settings: 'wght' 625;
+    }
+}
+
 @layer base {
     @font-face {
+        font-family: "Aeonik VF";
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("/fonts/AeonikPro-Roman-VF.woff2") format("woff2-variations"),
+             url("/fonts/AeonikPro-Roman-VF.ttf") format("truetype-variations");
+    }
+    @font-face {
+        font-family: 'Aeonik Fono';
+        src: url('/fonts/AeonikFono-Regular.woff2') format('woff2'),
+            url('/fonts/AeonikFono-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+/* Old fonts to be deleted */
+    /* @font-face {
         font-family: 'Andy Sans';
         font-style: normal;
         font-weight: 400;
@@ -21,16 +52,12 @@
         font-style: normal;
         font-weight: 700;
         src:  url('/fonts/Aeonik-Black.woff2') format('woff2');
-    }
-    @font-face {
-        font-family: 'Andy Mono';
-        font-style: normal;
-        font-weight: 400;
-        src:  url('/fonts/AeonikMonoTRIAL-Regular.otf') format('opentype');
-    }
+    } */
+
     html {
         -webkit-tap-highlight-color: transparent;
     }
+
     ::-moz-selection { /* Code for Firefox */
         color: #e4e4e7;
         background: #143ff5;
@@ -53,7 +80,7 @@ html {
 }
 
 .lazy-media {
-    @apply scale-125 opacity-0;
+    @apply scale-110 opacity-0;
 }
 
 .lazy-media-inview {

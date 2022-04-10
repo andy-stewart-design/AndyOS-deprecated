@@ -1,5 +1,6 @@
 export const projectList = [
     {
+        id: 1,
         year: 'Ongoing',
         client: 'Cipher News',
         service: ['Brand', 'Web']

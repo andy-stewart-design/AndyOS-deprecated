@@ -9,22 +9,22 @@
 	let dataSrc = '/';
 	if (lazy) {
 		dataSrc = src;
-		if (ratio === 'aspect-square') {
-			src = '/img/misc/placeholder-square.svg';
+		if (ratio === 'aspect-video') {
+			src = '/img/misc/placeholder-video.svg';
 		} else if (ratio === 'aspect-film') {
 			src = '/img/misc/placeholder-film.svg';
 		} else if (ratio === 'aspect-common') {
 			src = '/img/misc/placeholder-common.svg';
 		} else {
-			src = '/img/misc/placeholder-video.svg';
+			src = '/img/misc/placeholder-square.svg';
 		}
 	}
 </script>
 
 <!-- lazy-media and lazy-media-inview classes are in app.css -->
-<div class="w-full bg-black bg-opacity-25 overflow-hidden">
+<div class="w-full bg-black bg-opacity-5 dark:bg-gray-200 dark:bg-opacity-5 overflow-hidden">
 	<img
-		class="w-full transition-all origin-center duration-1000 ease-out-cubic object-cover {ratio}"
+		class="w-full transition-all origin-top duration-700 ease-out-cubic object-cover {ratio}"
 		class:lazy-media={lazy}
 		{src}
 		data-src={dataSrc}
