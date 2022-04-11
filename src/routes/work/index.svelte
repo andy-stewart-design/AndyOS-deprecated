@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import WorkCard from '$lib/components/WorkCard.svelte';
 	import PgTransSimple from '$lib/globals/PgTransSimple.svelte';
-	import ProjectList from '$lib/components/ProjectList.svelte';
+	import ProjectList from '$lib/components/Projects/ProjectList.svelte';
 	import { caseStudies } from '$lib/data/caseStudies.js';
 
 	let canHover;
@@ -22,7 +22,7 @@
 			class="flex flex-col justify-between items-center gap-y-8 h-[80vh] pt-32 md:pt-14 px-4 md:px-8 pb-16"
 		>
 			<h1
-				class="text-6xl sm:text-8xl lg:text-9xl font-bold text-center uppercase leading-none tracking-tight"
+				class="text-6xl sm:text-8xl lg:text-9xl font-black text-center uppercase leading-none tracking-tight"
 			>
 				Portfolio
 			</h1>

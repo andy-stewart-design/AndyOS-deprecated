@@ -61,7 +61,7 @@
 						class="group relative py-4 md:py-1 px-2 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 pointer-events-auto"
 					>
 						<a
-							class="text-black dark:text-gray-100 text-lg md:text-base font-medium py-2 px-4 rounded-full transition-opacity duration-300"
+							class="text-black dark:text-gray-100 text-lg md:text-base font-semibold py-2 px-4 rounded-full transition-opacity duration-300"
 							href={link.href}
 							sveltekit:prefetch
 							sveltekit:noscroll>{link.anchor}</a
@@ -77,7 +77,7 @@
 					</li>
 				{:else}
 					<li
-						class="text-black text-opacity-40 dark:text-gray-100 dark:text-opacity-40 font-medium py-4 md:py-1 px-6 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 cursor-not-allowed pointer-events-auto"
+						class="text-black text-opacity-40 dark:text-gray-100 dark:text-opacity-40 font-semibold py-4 md:py-1 px-6 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 cursor-not-allowed pointer-events-auto"
 					>
 						{link.anchor}
 					</li>

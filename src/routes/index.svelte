@@ -23,14 +23,14 @@
 						>
 							<Smiley />
 						</div>
-						<h1 class="font-vf wght-med text-4xl md:text-5xl leading-[1.1]">
+						<h1 class="font-vf font-medium text-4xl md:text-5xl leading-tightest">
 							Andy Stewart <span
 								class="text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
 								>designs future-focused visual systems. Often for screens, sometimes not.</span
 							>
 						</h1>
 						<p
-							class="font-vf wght-reg text-lg text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
+							class="font-vf font-normal text-lg text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
 						>
 							Andy’s a seasoned designer working at the intersection of brand and technology. He's
 							currently the digital creative director at <a
@@ -44,7 +44,7 @@
 						>
 							<a
 								href="/work"
-								class="flex items-center gap-2 font-vf wght-semibold text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
+								class="flex items-center gap-2 font-vf font-semibold text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 								sveltekit:noscroll
 								sveltekit:prefetch
 							>
@@ -66,7 +66,7 @@
 							</a>
 							<a
 								href="/about"
-								class="flex items-center gap-2 font-vf wght-semibold text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
+								class="flex items-center gap-2 font-vf font-semibold text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 								sveltekit:noscroll
 								sveltekit:prefetch
 							>

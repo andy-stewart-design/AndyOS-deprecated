@@ -22,7 +22,7 @@
 		sveltekit:noscroll
 		sveltekit:prefetch
 	>
-		<div class="relative w-full rounded-3xl overflow-hidden mb-4 bg-black transition-fix">
+		<div class="relative w-full rounded-3xl overflow-hidden mb-6 bg-black transition-fix">
 			{#if isLoaded}
 				<div class="relative w-full transform scale-110 ">
 					<div class="relative w-full transition-opacity duration-300 group-hover:opacity-75">
@@ -73,20 +73,30 @@
 		class="grid grid-cols-2 group-hover:text-blue dark:group-hover:text-neon transition-colors duration-300"
 	>
 		<div>
-			<h3 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl pb-1">
+			<h3
+				class="font-medium text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl leading-tightest pb-1"
+			>
 				{client}
 			</h3>
-			<h4 class="sups text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl">
+			<h4
+				class="sups font-light text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl leading-tighter"
+			>
 				{year}
 			</h4>
 		</div>
 		<div class="flex gap-x-2">
 			{#each category as item, index}
-				<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl">
+				<h4
+					class="font-medium text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl leading-tightest"
+				>
 					{item}
 				</h4>
 				{#if index < category.length - 1}
-					<h4 class="text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl opacity-20">/</h4>
+					<h4
+						class="font-normal text-3xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl leading-tightest opacity-30"
+					>
+						/
+					</h4>
 				{/if}
 			{/each}
 		</div>

@@ -20,7 +20,7 @@
 				class="flex flex-col justify-between items-center gap-y-8 h-[80vh] pt-32 md:pt-14 px-4 md:px-8 pb-16"
 			>
 				<h1
-					class="text-6xl sm:text-8xl lg:text-9xl font-bold text-center uppercase leading-none tracking-tight"
+					class="text-6xl sm:text-8xl lg:text-9xl font-black text-center uppercase leading-none tracking-tight"
 				>
 					About Andy
 				</h1>
@@ -32,19 +32,18 @@
 				class:loaded
 			>
 				<div class="grid gap-6 auto-rows-min">
-					<!-- <h1 class="font-mono">About Andy</h1> -->
-					<p class="text-xl">
+					<p class="text-xl font-book">
 						I believe that design works on the mind through the eyes. In the right context, with the
 						right tone of voice, design has the ability to spark emotion, engage the imagination and
 						even, at its best, inspire action.
 					</p>
-					<p class="text-xl">
+					<p class="text-xl font-book">
 						I'm Andy, a designer working at the intersection of brand and technology. I'm currently
 						the Digital Creative Director at <a href="https://turnstyle.studio/">Turnstyle</a>, a
 						small creative studio on the north side of Seattle, where I help bring life to brands
 						through strategic, thoughtful design.
 					</p>
-					<p class="text-xl">
+					<p class="text-xl font-book">
 						As a generalist both in training and disposition, my approach combines the craftsmanship
 						of traditional graphic design practices with the dynamism of modern digital media. I
 						have nearly a decade of experience in helping to realize even the most vague of ideas
@@ -55,25 +54,25 @@
 					<div class="flex flex-col items-start gap-y-2">
 						<h3 class="font-mono">Details</h3>
 						<a
-							class="row-auto font-medium text-2xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
+							class="row-auto font-semibold text-2xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 							href="https://twitter.com/madebyandy"
 							rel="external"
-							target="_blank">Twitter ↗</a
+							target="_blank">Twitter <span class="font-light">↗</span></a
 						>
 						<a
-							class="row-auto font-medium text-2xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
+							class="row-auto font-semibold text-2xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 							href="https://github.com/andy-stewart-design"
 							rel="external"
-							target="_blank">Github ↗</a
+							target="_blank">Github <span class="font-light">↗</span></a
 						>
 						<a
-							class="row-auto font-medium text-2xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
+							class="row-auto font-semibold text-2xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
 							href="https://codepen.io/andyandyandyoh"
 							rel="external"
-							target="_blank">Codepen ↗</a
+							target="_blank">Codepen <span class="font-light">↗</span></a
 						>
-						<p class="font-medium text-2xl opacity-30">Playlist</p>
-						<p class="font-medium text-2xl opacity-30">Uses</p>
+						<p class="font-semibold text-2xl opacity-30">Playlist</p>
+						<p class="font-semibold text-2xl opacity-30">Uses</p>
 					</div>
 				</div>
 				<img

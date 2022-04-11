@@ -1,8 +1,9 @@
 <script>
 	import PgTransSimple from '$lib/globals/PgTransSimple.svelte';
 	import ScrollTrigger from '$lib/globals/ScrollTrigger.svelte';
-	import ProjectSubnav from '$lib/components/ProjectSubnav.svelte';
-	import ProjectIntro from '$lib/components/ProjectIntro.svelte';
+	import ProjectSubnav from '$lib/components/Projects/ProjectSubnav.svelte';
+	import ProjectHero from '$lib/components/Projects/ProjectHero.svelte';
+	import ProjectIntro from '$lib/components/Projects/ProjectIntro.svelte';
 	import MediaGrid from '$lib/components/MediaGrid.svelte';
 	import { hero, intro, assets } from '$lib/data/wildtype';
 </script>
@@ -10,18 +11,7 @@
 <PgTransSimple>
 	<main class="relative w-full md:pl-[73px] pb-40 bg-gray-200 dark:bg-black">
 		<ProjectSubnav content={intro} />
-		<div class="relative flex items-center w-full h-[calc(100vh-4.5rem)] p-6 bg-black">
-			<img
-				src={hero.image}
-				class="absolute top-0 left-0 w-full h-full object-cover opacity-80"
-				alt="kn"
-			/>
-			<h2
-				class="relative text-6xl sm:text-8xl md:text-9xl lg:text-[144px] font-bold text-center text-gray-200 uppercase tracking-tight w-full"
-			>
-				{intro.client}
-			</h2>
-		</div>
+		<ProjectHero content={hero} />
 		<section class="px-4 md:px-8 xl:px-16 2xl:px-24">
 			<ProjectIntro content={intro} />
 			<ScrollTrigger>

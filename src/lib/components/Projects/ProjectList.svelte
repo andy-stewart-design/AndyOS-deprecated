@@ -1,7 +1,7 @@
 <script>
 	import { projectList } from '$lib/data/allProjects';
 
-	const gridText = 'text-xl sm:text-2xl lg:text-3xl xl:text-4xl';
+	const gridText = 'font-normal text-xl sm:text-2xl lg:text-3xl xl:text-4xl';
 </script>
 
 <div
@@ -17,11 +17,11 @@
 	>
 		2018-22
 	</h2>
-	<h3 class="text-sm md:text-base">Index</h3>
-	<h3 class="text-sm md:text-base">Client</h3>
-	<h3 class="md:hidden text-sm md:text-base">Year</h3>
-	<h3 class="text-sm md:text-base">Services</h3>
-	<h3 class="hidden md:block text-sm md:text-base">Year</h3>
+	<h3 class="font-mono text-sm md:text-base">Index</h3>
+	<h3 class="font-mono text-sm md:text-base">Client</h3>
+	<h3 class="font-mono md:hidden text-sm md:text-base">Year</h3>
+	<h3 class="font-mono text-sm md:text-base">Services</h3>
+	<h3 class="font-mono hidden md:block text-sm md:text-base">Year</h3>
 	<div class="col-span-full h-px bg-gray-800 dark:bg-gray-200 opacity-20 my-2 md:my-0" />
 	{#each projectList as project, index}
 		{#if index + 1 < 10}

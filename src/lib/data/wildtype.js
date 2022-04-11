@@ -1,4 +1,5 @@
 export const hero = {
+    client: 'Wildtype',
     headline: 'Seafood Without the Sea —',
     image: '/img/work/wildtype/Wildtype-HeroNew.jpeg'
 };

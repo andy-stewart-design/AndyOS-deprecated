@@ -31,6 +31,30 @@ const config = {
 			],
 			'mono': ['Aeonik Fono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
 		},
+		fontSize: {
+			'xs': '.75rem',
+			'sm': '.875rem',
+			'base': '1rem',
+			'lg': '1.125rem',
+			'xl': '1.25rem',
+			'2xl': '1.5rem',
+			'3xl': '1.875rem',
+			'4xl': '2.25rem',
+			'5xl': ['3rem', '1.05'],
+			'6xl': '3.75rem',
+			'7xl': '4.5rem',
+			'8xl': '6rem',
+			'9xl': '8rem',
+		},
+		letterSpacing: {
+			tightest: '-.0375em',
+			tighter: '-.025em',
+			tight: '-.0125em',
+			normal: '0',
+			wide: '.025em',
+			wider: '.05em',
+			widest: '.1em',
+		},
 		screens: {
 			'sm': '640px',
 			'md': '768px',
@@ -58,6 +82,10 @@ const config = {
 				rotate: {
 					'100%': { 'transform': 'rotate(360deg)' },
 				},
+			},
+			lineHeight: {
+				'tighter': '1.2',
+				'tightest': '1.1',
 			},
 			screens: {
 				'hover-hover': { 'raw': '(hover: hover)' },
