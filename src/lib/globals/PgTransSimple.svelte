@@ -5,8 +5,8 @@
 </script>
 
 <div
-	in:fade={{ duration: duration, delay: duration, easing: quadOut }}
-	out:fade={{ duration: duration / 2, easing: quadOut }}
+	in:fade={{ duration: duration, delay: duration * 2, easing: quadOut }}
+	out:fade={{ duration: duration, easing: quadOut }}
 	on:outroend={() => {
 		window.scroll(0, 0);
 	}}

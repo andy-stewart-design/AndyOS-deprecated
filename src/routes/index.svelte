@@ -5,32 +5,39 @@
 	import PgTransSimple from '$lib/globals/PgTransSimple.svelte';
 	import AppWindow from '$lib/components/AppWindow.svelte';
 	import Smiley from '$lib/icons/Smiley.svelte';
+	import Phone from '$lib/icons/Phone.svelte';
+	import User from '$lib/icons/User.svelte';
 	// import { draggable } from '@neodrag/svelte';
+
+	const links = [
+		{ text: 'Work', url: '/work', icon: Phone },
+		{ text: 'About', url: '/about', icon: User }
+	];
 </script>
 
 <PgTransSimple>
-	<main class="relative w-full min-h-screen py-20 md:py-16 md:pl-18">
-		<section class="relative flex justify-center w-full px-2 md:px-8">
+	<main class="relative min-h-screen w-full py-20 md:py-16 md:pl-18">
+		<section class="relative flex w-full justify-center px-2 md:px-8">
 			<div
-				class="relative w-full md:max-w-4xl pb-4"
+				class="relative w-full pb-4 md:max-w-4xl"
 				in:fly={{ y: 120, duration: duration * 2, delay: duration * 1.5, easing: quartOut }}
 			>
 				<AppWindow title="welcome.md">
-					<div class="grid gap-y-6 pt-8 px-4 pb-4 overflow-scroll">
+					<div class="grid gap-y-6 overflow-scroll px-4 pt-8 pb-4">
 						<div
 							class="w-16 animate-rotate text-blue dark:text-neon"
 							style="animation-duration: 10s"
 						>
 							<Smiley />
 						</div>
-						<h1 class="font-vf font-medium text-4xl md:text-5xl leading-tightest">
+						<h1 class="font-vf text-4xl font-medium leading-tightest md:text-5xl">
 							Andy Stewart <span
-								class="text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
+								class="text-black text-opacity-50 dark:text-gray-100 dark:text-opacity-50"
 								>designs future-focused visual systems. Often for screens, sometimes not.</span
 							>
 						</h1>
 						<p
-							class="font-vf font-normal text-lg text-black text-opacity-60 dark:text-gray-100 dark:text-opacity-60"
+							class="font-vf text-lg font-normal text-black text-opacity-50 dark:text-gray-100 dark:text-opacity-50"
 						>
 							Andy’s a seasoned designer working at the intersection of brand and technology. He's
 							currently the digital creative director at <a
@@ -40,52 +47,21 @@
 							but he is accepting new friends.
 						</p>
 						<div
-							class="flex gap-8 border-t border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 pt-4"
+							class="mt-2 flex gap-8 border-t border-black border-opacity-20 pt-4 dark:border-gray-200 dark:border-opacity-20"
 						>
-							<a
-								href="/work"
-								class="flex items-center gap-2 font-vf font-semibold text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
-								sveltekit:noscroll
-								sveltekit:prefetch
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-8 w-8 text-blue dark:text-neon"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-									stroke-width="2"
+							{#each links as link}
+								<a
+									href={link.url}
+									class="flex items-center gap-2 font-vf text-xl font-semibold transition-colors duration-300 hover:text-blue dark:hover:text-neon"
+									sveltekit:noscroll
+									sveltekit:prefetch
 								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-									/>
-								</svg>
-								Work
-							</a>
-							<a
-								href="/about"
-								class="flex items-center gap-2 font-vf font-semibold text-xl hover:text-blue dark:hover:text-neon transition-colors duration-300"
-								sveltekit:noscroll
-								sveltekit:prefetch
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-8 w-8 text-blue dark:text-neon"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-									stroke-width="2"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-									/>
-								</svg>
-								About
-							</a>
+									<div class="h-8 w-8 text-blue dark:text-neon">
+										<svelte:component this={link.icon} />
+									</div>
+									{link.text}
+								</a>
+							{/each}
 						</div>
 					</div>
 				</AppWindow>
