@@ -6,17 +6,21 @@
 	import ProjectIntro from '$lib/components/Projects/ProjectIntro.svelte';
 	import MediaGrid from '$lib/components/MediaGrid.svelte';
 	import { hero, intro, assets } from '$lib/data/wildtype';
+	import Footer from '$lib/globals/Footer.svelte';
 </script>
 
 <PgTransSimple>
-	<main class="relative w-full md:pl-[73px] pb-40 bg-gray-200 dark:bg-black">
+	<main class="relative w-full bg-gray-200 dark:bg-black md:pl-[73px]">
 		<ProjectSubnav content={intro} />
 		<ProjectHero content={hero} />
-		<section class="px-4 md:px-8 xl:px-16 2xl:px-24">
+		<section class="px-4 pb-24 md:px-8 xl:px-16 2xl:px-24">
 			<ProjectIntro content={intro} />
+		</section>
+		<section class="px-4 pb-24 md:px-8 xl:px-16 2xl:px-24">
 			<ScrollTrigger>
 				<MediaGrid contents={assets} />
 			</ScrollTrigger>
 		</section>
+		<Footer />
 	</main>
 </PgTransSimple>

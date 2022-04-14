@@ -21,7 +21,8 @@
 	}
 </script>
 
-<section class="relative grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+<!-- <section class="relative grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2"> -->
+<section class="relative grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2">
 	{#each contents as item, index}
 		<div class="{setWidth(item.width)} text-zinc-800 dark:text-zinc-200">
 			{#if item.type === 'image'}

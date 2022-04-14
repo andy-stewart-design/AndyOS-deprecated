@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import PgTransSimple from '$lib/globals/PgTransSimple.svelte';
 	import Accordion from '$lib/components/Accordion.svelte';
+	import Footer from '$lib/globals/Footer.svelte';
 
 	const links = [
 		{ text: 'Twitter', url: 'https://twitter.com/madebyandy', ext: true },
@@ -89,9 +90,17 @@
 				/>
 			</section>
 			<section
-				class="relative grid gap-y-4 border-t border-black border-opacity-20 py-24 px-4 pb-40 dark:border-gray-200 dark:border-opacity-20 md:px-8 xl:px-16 2xl:px-24"
+				class="relative grid gap-y-4 border-t border-black border-opacity-20 py-24 px-4 dark:border-gray-200 dark:border-opacity-20 md:px-8 xl:px-16 2xl:px-24"
 			>
-				<h2 class="font-mono">What I Do</h2>
+				<div class="grid gap-x-8 gap-y-4 md:grid-cols-3">
+					<h2 class="pt-[2px] font-mono">What I Do</h2>
+					<p class="font-book max-w-3xl pb-4 text-lg md:col-span-2">
+						I approach my work with years of experience leading projects and managing clients, both
+						as part of a studio and as an independent creative. I work hard to maintain my craft,
+						and actively contribute to projects both as a hands-on, principal designer and as a team
+						leader, and create value by stewarding projects from conception through implementation.
+					</p>
+				</div>
 				<div class="col-span-full my-2 h-px bg-gray-800 opacity-20 dark:bg-gray-200 md:my-0" />
 				<Accordion title="Strategy">
 					<div class="grid grid-cols-3 gap-x-8 pt-4">
@@ -99,7 +108,7 @@
 							<h4 class="mb-4 text-2xl  font-medium">Alignment</h4>
 							<p>
 								Successful projects require a shared understanding of goals and objectives. Building
-								the case for change and maintaining an inclusive, open process are essential to
+								the case for change and establishing an inclusive, open process are essential to
 								finding the right solution.
 							</p>
 						</div>
@@ -114,9 +123,8 @@
 						<div>
 							<h4 class="mb-4 text-2xl  font-medium">User Experience</h4>
 							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam in laudantium
-								atque praesentium laboriosam hic quasi eveniet minima temporibus repellat accusamus
-								explicabo blanditiis nobis.
+								Accurately defining the scope a project requires understanding not just a company's
+								goals, but how those goals interact with the needs and expectations of its audience.
 							</p>
 						</div>
 					</div>
@@ -124,27 +132,27 @@
 				<Accordion title="Design">
 					<div class="grid grid-cols-3 gap-x-8 pt-4">
 						<div>
-							<h4 class="mb-4 text-2xl  font-medium">Alignment</h4>
+							<h4 class="mb-4 text-2xl font-medium">Identity</h4>
 							<p>
-								Successful projects require a shared understanding of goals and objectives. Building
-								the case for change and maintaining an inclusive, open process are essential to
-								finding the right solution.
+								Getting people's attention requires more than a good business plan. A compelling
+								visual system helps translate strategy into action by giving your brand a clear,
+								consistent and memorable voice.
 							</p>
 						</div>
 						<div>
-							<h4 class="mb-4 text-2xl  font-medium">Narrative</h4>
+							<h4 class="mb-4 text-2xl font-medium">Interface</h4>
 							<p>
-								People don't respond to strategy—they respond to stories. Putting the right words in
-								the right order, with the right context, pacing and emotion, is the difference
-								between indifference and engagement.
+								Identities don't exist in isolation. Simple, beautiful, easy-to-use products can
+								help brands connect and interact with audiences in ways that are meaningful,
+								relevant and surprising.
 							</p>
 						</div>
 						<div>
-							<h4 class="mb-4 text-2xl  font-medium">User Experience</h4>
+							<h4 class="mb-4 text-2xl font-medium">Motion</h4>
 							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam in laudantium
-								atque praesentium laboriosam hic quasi eveniet minima temporibus repellat accusamus
-								explicabo blanditiis nobis.
+								In our increasingly digital world, motion is an essential part of identity. Like
+								color, type and layout, brands must make keyframes and easing curves a core part of
+								their visual systems.
 							</p>
 						</div>
 					</div>
@@ -152,32 +160,33 @@
 				<Accordion title="Technology">
 					<div class="grid grid-cols-3 gap-x-8 pt-4">
 						<div>
-							<h4 class="mb-4 text-2xl font-medium">Front End Development</h4>
+							<h4 class="mb-4 text-2xl font-medium">Front-End Development</h4>
 							<p>
-								Memorable digital experiences live at the intersection of design and technology.
-								Atque praesentium laboriosam hic quasi eveniet minima temporibus repellat accusamus
-								explicabo blanditiis nobis.
+								Memorable digital experiences live at the intersection of creativity and technology.
+								I'm comfortable working as close to the metal as necessary to bring ideas to life,
+								even if that means slinging code myself.
 							</p>
 						</div>
 						<div>
 							<h4 class="mb-4 text-2xl font-medium">Quality Assurance</h4>
 							<p>
-								It's not enough to make nice things—you have to be willing to break them. I want to
-								be able stand by the quality of my products, so I test things myself before they
-								ship.
+								Design is often considered synonymous with making things, but it's also about
+								breaking things. I kick the tires on all projects prior to launch to ensure they're
+								technically sound and faithful to the design.
 							</p>
 						</div>
 						<div>
 							<h4 class="mb-4 text-2xl font-medium">Generative Design</h4>
 							<p>
-								Computational aesthetics sit, amet consectetur adipisicing elit. Numquam in
-								laudantium atque praesentium laboriosam hic quasi eveniet minima temporibus repellat
-								accusamus explicabo blanditiis nobis.
+								What happens when you treat code as more than a cold, neutral language? Harnessing
+								the expressive power of computers allows us to create art that is as emotional,
+								evocative, and human as work created by hand.
 							</p>
 						</div>
 					</div>
 				</Accordion>
 			</section>
+			<Footer />
 		</main>
 	</div>
 </PgTransSimple>

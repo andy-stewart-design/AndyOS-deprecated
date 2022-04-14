@@ -63,26 +63,6 @@
         font-style: normal;
         font-display: swap;
     }
-/* Old fonts to be deleted */
-    /* @font-face {
-        font-family: 'Andy Sans';
-        font-style: normal;
-        font-weight: 400;
-        src:  url('/fonts/Aeonik-Regular.woff2') format('woff2');
-    }
-    @font-face {
-        font-family: 'Andy Sans';
-        font-style: normal;
-        font-weight: 500;
-        src:  url('/fonts/Aeonik-Medium.woff2') format('woff2');
-    }
-    @font-face {
-        font-family: 'Andy Sans';
-        font-style: normal;
-        font-weight: 700;
-        src:  url('/fonts/Aeonik-Black.woff2') format('woff2');
-    } */
-
     html {
         -webkit-tap-highlight-color: transparent;
     }
@@ -103,7 +83,7 @@
 }
 
 html {
-    @apply bg-black font-vf font-normal;
+    @apply bg-black font-vf font-normal scroll-smooth;
     font-feature-settings: 'ss02';
     /* font-feature-settings: 'ss02', 'zero', 'tnum'; */
 }
