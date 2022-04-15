@@ -25,23 +25,19 @@
 				<AppWindow title="welcome.md">
 					<div class="grid gap-y-6 overflow-scroll px-4 pt-8 pb-4">
 						<div
-							class="w-16 animate-rotate text-blue dark:text-neon"
+							class="w-16 animate-rotate text-blue transition-colors duration-[400] dark:text-neon"
 							style="animation-duration: 10s"
 						>
 							<Smiley />
 						</div>
-						<h1 class="font-vf text-4xl font-medium leading-tightest md:text-5xl">
-							Andy Stewart <span
-								class="text-black text-opacity-50 dark:text-gray-100 dark:text-opacity-50"
-								>designs future-focused visual systems. Often for screens, sometimes not.</span
-							>
+						<h1 class="font-vf text-4xl font-semibold leading-tightest md:text-5xl">
+							<span class="text-gray-900 dark:text-gray-200">Andy Stewart</span> designs future-focused
+							visual systems. Often for screens, sometimes not.
 						</h1>
-						<p
-							class="font-vf text-lg font-normal text-black text-opacity-50 dark:text-gray-100 dark:text-opacity-50"
-						>
+						<p class="font-vf text-lg font-normal">
 							Andy’s a seasoned designer working at the intersection of brand and technology. He's
 							currently the digital creative director at <a
-								class="text-black text-opacity-100 dark:text-gray-100 dark:text-opacity-100"
+								class="font-semibold text-gray-900 dark:text-gray-200"
 								href="/">Turnstyle</a
 							>, a small brand and web studio in Seattle. He's not currently accepting new projects,
 							but he is accepting new friends.
@@ -52,7 +48,7 @@
 							{#each links as link}
 								<a
 									href={link.url}
-									class="flex items-center gap-2 font-vf text-xl font-semibold transition-colors duration-300 hover:text-blue dark:hover:text-neon"
+									class="flex items-center gap-2 font-vf text-xl font-semibold text-gray-900 transition-colors duration-300 hover:text-blue dark:text-gray-200 dark:hover:text-neon"
 									sveltekit:noscroll
 									sveltekit:prefetch
 								>

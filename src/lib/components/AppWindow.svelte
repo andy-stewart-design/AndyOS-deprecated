@@ -10,22 +10,22 @@
 </script>
 
 <div
-	class="backdrop-blur-sm border border-black border-opacity-10 dark:border-gray-100 dark:border-opacity-10 rounded-md shadow-xl overflow-hidden"
+	class="overflow-hidden rounded-md border border-black border-opacity-10 shadow-xl backdrop-blur-sm dark:border-gray-100 dark:border-opacity-10"
 >
 	<article
-		class="grid gap-y-1 bg-gray-300 bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-70 p-1 shadow-xl"
+		class="grid gap-y-1 bg-gray-300 bg-opacity-70 p-1 shadow-xl dark:bg-gray-900 dark:bg-opacity-70"
 	>
-		<div class="flex items-center pl-1 left">
+		<div class="left flex items-center pl-1">
 			<p
-				class="text-xs text-black text-opacity-50 dark:text-gray-100 dark:text-opacity-50 flex-grow"
+				class="flex-grow text-xs text-black text-opacity-50 dark:text-gray-100 dark:text-opacity-50"
 			>
 				{title}
 			</p>
 			<div
-				class="flex justify-center items-center w-6 h-6 bg-gray-200 bg-opacity-0 dark:bg-black dark:bg-opacity-0 transition-colors duration-300 hover:bg-black hover:bg-opacity-20 dark:hover:bg-gray-200 dark:hover:bg-opacity-10 rounded-md cursor-pointer"
+				class="flex h-6 w-6 cursor-pointer items-center justify-center rounded-md bg-gray-200 bg-opacity-0 transition-colors duration-300 hover:bg-black hover:bg-opacity-20 dark:bg-black dark:bg-opacity-0 dark:hover:bg-gray-200 dark:hover:bg-opacity-10"
 				on:click={toggleContent}
 			>
-				<div class="w-2 h-px bg-black dark:bg-gray-300" />
+				<div class="h-px w-2 bg-black dark:bg-gray-300" />
 			</div>
 		</div>
 		{#if isOpen}

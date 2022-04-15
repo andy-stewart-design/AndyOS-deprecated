@@ -24,23 +24,23 @@
 </script>
 
 <div
-	class="fixed bottom-6 right-2 backdrop-blur-sm border border-black border-opacity-10 dark:border-gray-100 dark:border-opacity-10 w-14 h-14 rounded-full shadow-xl z-40 overflow-hidden md:hidden"
+	class="fixed bottom-6 right-2 z-40 h-14 w-14 overflow-hidden rounded-full border border-black border-opacity-10 shadow-xl backdrop-blur-sm dark:border-gray-100 dark:border-opacity-10 md:hidden"
 	on:click={() => (isOpen = !isOpen)}
 >
 	<div
-		class="flex justify-center items-center bg-gray-200 bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-70 w-full h-full"
+		class="flex h-full w-full items-center justify-center bg-gray-200 bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-70"
 	>
-		<div class="relative w-6 h-[2px]">
+		<div class="relative h-[2px] w-6">
 			<div
-				class="absolute top-0 left-0 w-full h-full bg-white -translate-y-2 transition-transform duration-700 ease-out-quart"
+				class="ease-out-quart absolute top-0 left-0 h-full w-full -translate-y-2 bg-white transition-transform duration-700"
 				class:isOpen-iconTop={isOpen}
 			/>
 			<div
-				class="w-full h-full bg-white origin-center transition-transform duration-700 ease-out-quart"
+				class="ease-out-quart h-full w-full origin-center bg-white transition-transform duration-700"
 				class:isOpen-iconMid={isOpen}
 			/>
 			<div
-				class="absolute top-0 left-0 w-full h-full bg-white translate-y-2 transition-transform duration-700 ease-out-quart"
+				class="ease-out-quart absolute top-0 left-0 h-full w-full translate-y-2 bg-white transition-transform duration-700"
 				class:isOpen-iconBot={isOpen}
 			/>
 		</div>
@@ -48,43 +48,43 @@
 </div>
 
 <nav
-	class="fixed bottom-24 right-2 md:bottom-12 md:left-1/2 md:right-auto md:-translate-x-1/2 md:ml-8 backdrop-blur-sm border border-black border-opacity-10 dark:border-gray-100 dark:border-opacity-10 rounded-2xl md:rounded-full shadow-xl z-40 opacity-0 -translate-y-8 md:opacity-100 md:translate-y-0 transition-ot md:transition-none duration-500 ease-in-quint"
+	class="ease-in-quint fixed bottom-24 right-2 z-40 -translate-y-8 rounded-2xl border border-black border-opacity-10 opacity-0 shadow-xl backdrop-blur-sm transition-ot duration-500 dark:border-gray-100 dark:border-opacity-10 md:bottom-12 md:left-1/2 md:right-auto md:ml-8 md:-translate-x-1/2 md:translate-y-0 md:rounded-full md:opacity-100 md:transition-none"
 	class:isOpen
 >
 	<div
-		class="bg-white bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-70 py-1 md:py-3 px-1 rounded-2xl md:rounded-full"
+		class="rounded-2xl bg-white bg-opacity-70 py-1 px-1 dark:bg-gray-900 dark:bg-opacity-70 md:rounded-full md:py-3"
 	>
-		<ul class="flex flex-col md:flex-row md:items-center pointer-events-none w-48 md:w-auto">
+		<ul class="pointer-events-none flex w-48 flex-col md:w-auto md:flex-row md:items-center">
 			{#each links as link, index}
 				{#if link.href}
 					<li
-						class="group relative py-4 md:py-1 px-2 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 pointer-events-auto"
+						class="group pointer-events-auto relative border-b border-black border-opacity-20 py-4 px-2 last:border-0 dark:border-gray-200 dark:border-opacity-20 md:border-b-0 md:border-r md:py-1"
 					>
 						<a
-							class="text-black dark:text-gray-100 text-lg md:text-base font-semibold py-2 px-4 rounded-full transition-opacity duration-300"
+							class="rounded-full py-2 px-4 text-lg font-semibold text-gray-900 transition-opacity duration-300 dark:text-gray-200 md:text-base"
 							href={link.href}
 							sveltekit:prefetch
 							sveltekit:noscroll>{link.anchor}</a
 						>
 						<div
-							class="absolute bottom-0 md:-bottom-0.5 left-0 flex justify-center items-center w-6 md:w-full h-full md:h-auto"
+							class="absolute bottom-0 left-0 flex h-full w-6 items-center justify-center md:-bottom-0.5 md:h-auto md:w-full"
 						>
 							<div
-								class="w-1 h-1 bg-gray-900 dark:bg-gray-100 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300"
+								class="h-1 w-1 translate-y-2 rounded-full bg-gray-900 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 dark:bg-gray-200"
 								class:active={$page.url.pathname === link.href}
 							/>
 						</div>
 					</li>
 				{:else}
 					<li
-						class="text-black text-opacity-40 dark:text-gray-100 dark:text-opacity-40 font-semibold py-4 md:py-1 px-6 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 cursor-not-allowed pointer-events-auto"
+						class="text-gray-900 text-opacity-40 dark:text-gray-200 dark:text-opacity-40 font-semibold py-4 md:py-1 px-6 border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20 last:border-0 cursor-not-allowed pointer-events-auto"
 					>
 						{link.anchor}
 					</li>
 				{/if}
 			{/each}
-			<li class="h-14 md:h-8 w-16 pointer-events-auto">
-				<div class="w-full h-full transition-opacity duration-300">
+			<li class="pointer-events-auto h-14 w-16 md:h-8">
+				<div class="h-full w-full text-gray-900 transition-opacity duration-300 dark:text-gray-200">
 					<ThemeToggle />
 				</div>
 			</li>
@@ -94,7 +94,7 @@
 
 <style>
 	.isOpen {
-		@apply opacity-100 translate-y-0;
+		@apply translate-y-0 opacity-100;
 	}
 
 	.isOpen-iconTop {
@@ -110,7 +110,7 @@
 	}
 
 	.active {
-		@apply opacity-100 translate-y-0;
+		@apply translate-y-0 opacity-100;
 	}
 
 	ul.flex:hover > *:not(.text-opacity-40) > a,

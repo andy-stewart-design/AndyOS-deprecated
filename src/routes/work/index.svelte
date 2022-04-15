@@ -23,7 +23,7 @@
 			class="flex h-[80vh] flex-col items-center justify-between gap-y-8 px-4 pt-32 pb-16 md:px-8 md:pt-14"
 		>
 			<h1
-				class="text-center text-6xl font-black uppercase leading-none tracking-tight sm:text-8xl lg:text-9xl"
+				class="text-center text-6xl font-black uppercase leading-none tracking-tight text-gray-900 dark:text-gray-200 sm:text-8xl lg:text-9xl xl:text-[160px]"
 			>
 				Portfolio
 			</h1>

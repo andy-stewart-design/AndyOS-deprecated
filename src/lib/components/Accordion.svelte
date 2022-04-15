@@ -7,10 +7,10 @@
 	export let isOpen = false;
 </script>
 
-<div class="border-b border-gray-100 border-opacity-20 ">
+<div class="border-b border-black border-opacity-20 dark:border-gray-200 dark:border-opacity-20">
 	<div class="mb-4">
 		<button
-			class="font-book relative w-full py-3 text-left text-5xl"
+			class="font-book relative w-full py-3 text-left text-5xl text-gray-900 dark:text-gray-200"
 			on:click={() => (isOpen = !isOpen)}
 			>{title}
 			<span

@@ -4,13 +4,13 @@
 </script>
 
 <div
-	class="fixed top-0 left-0 w-screen md:w-auto md:h-screen border-b md:border-b-0 md:border-r border-black border-opacity-20 dark:border-gray-100 dark:border-opacity-20 z-40 backdrop-blur-sm"
+	class="fixed top-0 left-0 z-40 w-screen border-b border-black border-opacity-20 backdrop-blur-sm dark:border-gray-100 dark:border-opacity-20 md:h-screen md:w-auto md:border-b-0 md:border-r"
 >
 	<div
-		class="relative w-full md:w-18 h-16 md:h-screen bg-gray-200 bg-opacity-30 dark:bg-black dark:bg-opacity-20 md:bg-opacity-0 md:dark:bg-opacity-0"
+		class="relative h-16 w-full bg-gray-200 bg-opacity-30 dark:bg-black dark:bg-opacity-20 md:h-screen md:w-18 md:bg-opacity-0 md:dark:bg-opacity-0"
 	>
 		<div
-			class="absolute top-0 md:top-18 left-16 md:left-0 flex justify-center items-center font-mono w-full md:w-[100vh] h-16 md:h-18 md:origin-top-left md:rotate-90 md:translate-x-18 pointer-events-none opacity-60"
+			class="pointer-events-none absolute top-0 left-16 flex h-16 w-full items-center justify-center font-mono opacity-60 md:top-18 md:left-0 md:h-18 md:w-[100vh] md:origin-top-left md:translate-x-18 md:rotate-90"
 		>
 			<Marquee
 				contents="Strategy + Design + Code + Illustration + Motion +"
@@ -19,10 +19,10 @@
 			/>
 		</div>
 		<div
-			class="relative flex justify-center items-center w-16 h-16 md:w-18 md:h-18 border-r md:border-r-0 md:border-b border-black border-opacity-20 dark:border-gray-100 dark:border-opacity-20"
+			class="relative flex h-16 w-16 items-center justify-center border-r border-black border-opacity-20 dark:border-gray-100 dark:border-opacity-20 md:h-18 md:w-18 md:border-r-0 md:border-b"
 		>
 			<a
-				class="w-full h-full p-2.5 bg-black bg-opacity-0 dark:bg-gray-200 dark:bg-opacity-0 hover:text-blue dark:hover:text-neon transition-colors duration-300"
+				class="h-full w-full bg-black bg-opacity-0 p-2.5 text-gray-900 transition-colors duration-300 hover:text-blue dark:bg-gray-200 dark:bg-opacity-0 dark:text-gray-200 dark:hover:text-neon"
 				href="/"
 				sveltekit:prefetch
 				sveltekit:noscroll

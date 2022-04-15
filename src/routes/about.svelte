@@ -29,12 +29,14 @@
 			class="flex h-[80vh] flex-col items-center justify-between gap-y-8 px-4 pt-32 pb-16 md:px-8 md:pt-14"
 		>
 			<h1
-				class="text-center text-6xl font-black uppercase leading-none tracking-tight sm:text-8xl lg:text-9xl"
+				class="text-center text-6xl font-black uppercase leading-none tracking-tight text-gray-900 dark:text-gray-200 sm:text-8xl lg:text-9xl xl:text-[160px]"
 			>
 				About Andy
 			</h1>
-			<div class="h-full w-px grow bg-black opacity-30 dark:bg-gray-200" />
-			<p class="text-center font-mono">Digital Creative Director</p>
+			<div class="h-full w-px grow bg-gray-900 opacity-30 dark:bg-gray-200" />
+			<p class="text-center font-mono text-gray-900 dark:text-gray-200">
+				Digital Creative Director
+			</p>
 		</section>
 		<main
 			class="relative translate-y-[25vh] opacity-0 transition-ot duration-1000 ease-out-cubic"
@@ -43,7 +45,7 @@
 			<section
 				class="relative grid gap-12 border-t border-black border-opacity-20 py-24 px-4 pb-40 dark:border-gray-200 dark:border-opacity-20 md:px-8 lg:grid-cols-2 xl:px-16 2xl:px-24"
 			>
-				<div class="grid auto-rows-min gap-6">
+				<div class="grid auto-rows-min gap-6 ">
 					<p class="font-book text-xl">
 						I believe that design works on the mind through the eyes. In the right context, with the
 						right tone of voice, design has the ability to spark emotion, engage the imagination and
@@ -68,7 +70,7 @@
 						{#each links as link}
 							{#if link.ext}
 								<a
-									class="row-auto text-2xl font-semibold transition-colors duration-300 hover:text-blue dark:hover:text-neon"
+									class="row-auto text-2xl font-semibold text-gray-900 transition-colors duration-300 hover:text-blue dark:text-gray-200 dark:hover:text-neon"
 									href={link.url}
 									rel="external"
 									target="_blank">{link.text} <span class="font-light">↗</span></a
@@ -105,7 +107,7 @@
 				<Accordion title="Strategy">
 					<div class="grid grid-cols-3 gap-x-8 pt-4">
 						<div>
-							<h4 class="mb-4 text-2xl  font-medium">Alignment</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">Alignment</h4>
 							<p>
 								Successful projects require a shared understanding of goals and objectives. Building
 								the case for change and establishing an inclusive, open process are essential to
@@ -113,7 +115,7 @@
 							</p>
 						</div>
 						<div>
-							<h4 class="mb-4 text-2xl  font-medium">Narrative</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">Narrative</h4>
 							<p>
 								People don't respond to strategy—they respond to stories. Putting the right words in
 								the right order, with the right context, pacing and emotion, is the difference
@@ -121,7 +123,9 @@
 							</p>
 						</div>
 						<div>
-							<h4 class="mb-4 text-2xl  font-medium">User Experience</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">
+								User Experience
+							</h4>
 							<p>
 								Accurately defining the scope a project requires understanding not just a company's
 								goals, but how those goals interact with the needs and expectations of its audience.
@@ -132,7 +136,7 @@
 				<Accordion title="Design">
 					<div class="grid grid-cols-3 gap-x-8 pt-4">
 						<div>
-							<h4 class="mb-4 text-2xl font-medium">Identity</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">Identity</h4>
 							<p>
 								Getting people's attention requires more than a good business plan. A compelling
 								visual system helps translate strategy into action by giving your brand a clear,
@@ -140,7 +144,7 @@
 							</p>
 						</div>
 						<div>
-							<h4 class="mb-4 text-2xl font-medium">Interface</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">Interface</h4>
 							<p>
 								Identities don't exist in isolation. Simple, beautiful, easy-to-use products can
 								help brands connect and interact with audiences in ways that are meaningful,
@@ -148,7 +152,7 @@
 							</p>
 						</div>
 						<div>
-							<h4 class="mb-4 text-2xl font-medium">Motion</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">Motion</h4>
 							<p>
 								In our increasingly digital world, motion is an essential part of identity. Like
 								color, type and layout, brands must make keyframes and easing curves a core part of
@@ -160,7 +164,9 @@
 				<Accordion title="Technology">
 					<div class="grid grid-cols-3 gap-x-8 pt-4">
 						<div>
-							<h4 class="mb-4 text-2xl font-medium">Front-End Development</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">
+								Front-End Development
+							</h4>
 							<p>
 								Memorable digital experiences live at the intersection of creativity and technology.
 								I'm comfortable working as close to the metal as necessary to bring ideas to life,
@@ -168,7 +174,9 @@
 							</p>
 						</div>
 						<div>
-							<h4 class="mb-4 text-2xl font-medium">Quality Assurance</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">
+								Quality Assurance
+							</h4>
 							<p>
 								Design is often considered synonymous with making things, but it's also about
 								breaking things. I kick the tires on all projects prior to launch to ensure they're
@@ -176,7 +184,9 @@
 							</p>
 						</div>
 						<div>
-							<h4 class="mb-4 text-2xl font-medium">Generative Design</h4>
+							<h4 class="mb-4 text-2xl font-medium text-gray-900 dark:text-gray-200">
+								Generative Design
+							</h4>
 							<p>
 								What happens when you treat code as more than a cold, neutral language? Harnessing
 								the expressive power of computers allows us to create art that is as emotional,

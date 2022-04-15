@@ -24,6 +24,10 @@
         font-variation-settings: 'wght' 425;
         font-weight: 400;
     }
+    .dark .font-normal {
+        font-variation-settings: 'wght' 400;
+        font-weight: 400;
+    }
     .font-medium {
         font-variation-settings: 'wght' 550;
         font-weight: 500;
@@ -31,6 +35,11 @@
     .font-semibold {
         font-variation-settings: 'wght' 625;
         font-weight: 600;
+    }
+    .dark .font-semibold {
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+        letter-spacing: .05px;
     }
     .font-bold {
         font-variation-settings: 'wght' 700;
@@ -83,7 +92,7 @@
 }
 
 html {
-    @apply bg-black font-vf font-normal scroll-smooth;
+    @apply bg-black font-vf font-normal;
     font-feature-settings: 'ss02';
     /* font-feature-settings: 'ss02', 'zero', 'tnum'; */
 }

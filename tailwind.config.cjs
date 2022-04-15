@@ -88,11 +88,17 @@ const config = {
 				'tighter': '1.2',
 				'tightest': '1.1',
 			},
+			opacity: {
+				'65': '.65',
+			},
 			screens: {
 				'hover-hover': { 'raw': '(hover: hover)' },
 			},
 			spacing: {
 				'18': '4.5rem',
+			},
+			transitionDuration: {
+				'400': '400ms',
 			},
 			transitionProperty: {
 				'ot': 'opacity, transform',
