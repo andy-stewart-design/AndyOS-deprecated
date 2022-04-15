@@ -5,24 +5,28 @@
 	export let contents;
 
 	function setWidth(width) {
-		if (width === '1/2') {
-			return 'col-span-1';
+		if (width === 'half-left') {
+			return 'half-left';
+		} else if (width === 'half-right') {
+			return 'half-right';
+		} else if (width === 'inset') {
+			return 'inset';
 		} else {
-			return 'col-span-1 lg:col-span-2';
+			return 'full';
 		}
 	}
 
 	function setText(width) {
-		if (width === '1/2') {
+		if (width === 'half-left' || width === 'half-right') {
 			return 'max-w-xl';
-		} else if (width === '1/1') {
+		} else if (width === 'full' || width === 'inset') {
 			return 'max-w-4xl m-auto mt-16';
 		}
 	}
 </script>
 
 <!-- <section class="relative grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2"> -->
-<section class="relative grid grid-cols-1 items-center gap-8 md:gap-12 lg:grid-cols-2">
+<section class="project-grid relative items-center">
 	{#each contents as item, index}
 		<div class="{setWidth(item.width)} text-zinc-800 dark:text-zinc-200">
 			{#if item.type === 'image'}
@@ -49,3 +53,44 @@
 		</div>
 	{/each}
 </section>
+
+<style>
+	.project-grid {
+		display: grid;
+		column-gap: 2rem;
+		row-gap: 3rem;
+		grid-template-columns: 0 minmax(0, 1fr) 0;
+	}
+	.full {
+		grid-column: 1 / -1;
+	}
+	.inset {
+		grid-column: 2 / 3;
+	}
+	.half-left {
+		grid-column: 2/3;
+	}
+	.half-right {
+		grid-column: 2/3;
+	}
+	@media (min-width: 1024px) {
+		.project-grid {
+			display: grid;
+			column-gap: 4rem;
+			row-gap: 6rem;
+			grid-template-columns: 2rem minmax(0, 1fr) minmax(0, 1fr) 2rem;
+		}
+		.full {
+			grid-column: 1 / -1;
+		}
+		.inset {
+			grid-column: 2 / 4;
+		}
+		.half-left {
+			grid-column: 2/3;
+		}
+		.half-right {
+			grid-column: 3/4;
+		}
+	}
+</style>

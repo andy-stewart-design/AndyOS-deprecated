@@ -16,7 +16,8 @@
 		<section class="px-4 pb-24 md:px-8 xl:px-16 2xl:px-24">
 			<ProjectIntro content={intro} />
 		</section>
-		<section class="px-4 pb-24 md:px-8 xl:px-16 2xl:px-24">
+		<!-- <section class="px-4 pb-24 md:px-8 xl:px-16 2xl:px-24"> -->
+		<section class="pb-24">
 			<ScrollTrigger>
 				<MediaGrid contents={assets} />
 			</ScrollTrigger>
